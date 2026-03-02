@@ -3,15 +3,20 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import NotFountPage from "./pages/NotFoundPage";
 import ProjectsPage from "./pages/ProjectsPage";
+import Layout from "./components/layout/Layout";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="*" element={<NotFountPage />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<NotFountPage />} />
+        </Route>
       </Routes>
     </div>
   );
