@@ -1,0 +1,58 @@
+:root {
+  /* colors */
+  --col-text-primary: #242424;
+  --col-text-secondary: #357677;
+  --col-text-tertiary: #f2542d;
+  --col-text-invert: #fefae0;
+
+  --col-surface-primary: #121212;
+  --col-surface-secondary: #242424;
+  --col-surface-tertiary: #fefae0;
+
+  --col-graph-1: #357677;
+  --col-graph-2: #22434b;
+  --col-graph-3: #f2542d;
+
+  --col-success: #63d0a1;
+  --col-warning: #ffc806;
+  --col-error: #fe9f9f;
+
+  /* boxshadow */
+  --boxshadow: -53px 33px 91.8px rgba(0, 0, 0, 0.1);
+  --boxshadow-light: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+
+  /* spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+
+  /* border */
+  --border-radius: 40px;
+
+  /* font sizes */
+  --text-xxl: 36px;
+  --text-xl: 32px;
+  --text-lg: 24px;
+  --text-md: 18px;
+  --text-sm: 14px;
+  --text-xs: 12px;
+
+  /* composite fonts */
+  --font-title: 900 68px "GillSansNova";
+
+  --font-h1: 900 48px "GillSansNova";
+  --font-h2: 800 36px "Outfit";
+  --font-h3: 700 28px "Outfit";
+  --font-h4: 800 24px "Outfit";
+
+  --font-body-1: 400 18px "Outfit";
+  --font-bodyStd: 400 14px "Outfit";
+  --font-body-3: 400 12px "Outfit";
+
+  --font-button: 700 14px "Outfit";
+  --font-label: 500 24px "Outfit";
+  --font-chip: 600 16px "Outfit";
+}

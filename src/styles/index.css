@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "./variables.css";
+@import "./fonts.css";
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  font: var(--font-bodyStd);
+  background-color: var(--col-surface-secondary);
+}
