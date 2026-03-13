@@ -3,10 +3,27 @@
 @import "./fonts.css";
 
 body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
   font: var(--font-bodyStd);
   background-color: var(--col-surface-secondary);
+  color: var(--col-text-primary);
+}
+
+main {
+  padding-inline: 60px;
+}
+
+h1 {
+  font: var(--font-h1);
+}
+
+h2 {
+  font: var(--font-h2);
+}
+
+h3 {
+  font: var(--font-h3);
+}
+
+h4 {
+  font: var(--font-h4);
 }

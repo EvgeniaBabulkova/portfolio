@@ -4,7 +4,10 @@ export default function HomePage() {
   return (
     <>
       <h1>Homeeee</h1>
-      <Button>ufjosegh</Button>
+      <h2>Homeeee</h2>
+      <h3>Homeeee</h3>
+      <h4>Homeeee</h4>
+      <Button>bUTTOOOON HEREEE</Button>
     </>
   );
 }

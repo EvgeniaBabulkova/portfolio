@@ -1,14 +1,15 @@
 :root {
   /* colors */
-  --col-text-primary: #242424;
+  --col-text-primary: #fefae0;
   --col-text-secondary: #357677;
   --col-text-tertiary: #f2542d;
-  --col-text-invert: #fefae0;
+  --col-text-invert: #242424;
 
   --col-surface-primary: #121212;
   --col-surface-secondary: #242424;
   --col-surface-tertiary: #fefae0;
 
+  /* to continueeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
   --col-graph-1: #357677;
   --col-graph-2: #22434b;
   --col-graph-3: #f2542d;
