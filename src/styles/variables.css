@@ -7,9 +7,9 @@
 
   --col-surface-primary: #121212;
   --col-surface-secondary: #242424;
-  --col-surface-tertiary: #fefae0;
+  --col-surface-tertiary: #3a3737;
+  --col-surface-invert: #fefae0;
 
-  /* to continueeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
   --col-graph-1: #357677;
   --col-graph-2: #22434b;
   --col-graph-3: #f2542d;
@@ -18,9 +18,12 @@
   --col-warning: #ffc806;
   --col-error: #fe9f9f;
 
-  /* boxshadow */
-  --boxshadow: -53px 33px 91.8px rgba(0, 0, 0, 0.1);
-  --boxshadow-light: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+  /* shadow */
+  --shadow: 15px 15px 3px rgba(0, 0, 0, 0.5);
+
+  /* border */
+  --border-radius: 28px;
+  --border-radius-full: 100px;
 
   /* spacing */
   --spacing-xs: 4px;
@@ -29,31 +32,29 @@
   --spacing-lg: 24px;
   --spacing-xl: 32px;
   --spacing-xxl: 48px;
-
-  /* border */
-  --border-radius: 40px;
+  --spacing-3xl: 56px;
 
   /* font sizes */
-  --text-xxl: 36px;
-  --text-xl: 32px;
-  --text-lg: 24px;
-  --text-md: 18px;
-  --text-sm: 14px;
   --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 18px;
+  --text-lg: 24px;
+  --text-xl: 32px;
+  --text-xxl: 36px;
 
   /* composite fonts */
   --font-title: 900 68px "GillSansNova";
 
-  --font-h1: 900 48px "GillSansNova";
+  --font-h1: 900 48px/1 "GillSansNova";
   --font-h2: 800 36px "Outfit";
   --font-h3: 700 28px "Outfit";
   --font-h4: 800 24px "Outfit";
 
-  --font-body-1: 400 18px "Outfit";
+  --font-body-1: 400 16px "Outfit";
   --font-bodyStd: 400 14px "Outfit";
   --font-body-3: 400 12px "Outfit";
 
-  --font-button: 700 14px "Outfit";
+  --font-button: 700 16px "Outfit";
   --font-label: 500 24px "Outfit";
-  --font-chip: 600 16px "Outfit";
+  --font-chip: 500 14px "Outfit";
 }

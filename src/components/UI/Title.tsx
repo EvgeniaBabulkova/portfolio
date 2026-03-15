@@ -1,0 +1,13 @@
+type TitleProps = {
+  subtitle: string;
+  title: string;
+};
+
+export default function Title({ subtitle, title }: TitleProps) {
+  return (
+    <div>
+      <p className="[font:var(--font-label)] text-(--col-text-tertiary)">{subtitle}</p>
+      <h1>{title}</h1>
+    </div>
+  );
+}
