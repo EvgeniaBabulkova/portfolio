@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 5rem;
+  /* position: fixed; */
+  z-index: 100;
+  width: 100%;
+}
+
+.rightNav {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-xl);
+  background: var(--col-surface-primary);
+  border-radius: var(--border-radius-full);
+  font: var(--font-body-1);
+}

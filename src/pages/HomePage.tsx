@@ -34,6 +34,7 @@ export default function HomePage() {
       <Banner subtitle="Contact" title="Let's get in touch!">
         <Button trailingIcon={<img src={LinkIcon} />}>Button here</Button>
       </Banner>
+
       <Tag onSelect={() => {}}>sonnldsvns</Tag>
     </>
   );

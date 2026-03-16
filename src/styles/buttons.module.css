@@ -1,0 +1,17 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--col-surface-secondary);
+  font: var(--font-button);
+  box-shadow: var(--shadow);
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+  background: var(--col-surface-tertiary);
+}
