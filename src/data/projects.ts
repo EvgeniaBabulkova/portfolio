@@ -1,6 +1,9 @@
 import type { Category } from "./categories";
 import WashWorldLogo from "../assets/prj-wash-world/WashWorld-logo.svg";
 import DaosLogo from "../assets/prj-daos/DAOS-logo.svg";
+import PondooLogo from "../assets/prj-pondoo/Pondoo-logo.svg";
+import GreenUXLogo from "../assets/prj-green-ux/greenUX-logo.svg";
+import TCCLogo from "../assets/prj-tcc/TCC-logo.svg";
 
 export type Project = {
   slug: string;
@@ -24,7 +27,8 @@ export const projects: Project[] = [
     category: ["Frontend", "Full stack"],
     client: "Wash World",
     year: "2025",
-    shortDescription: "Lalala srghnnsugrvsrb suim ljsf nfdssu fsdg usdd uvfds genecs",
+    shortDescription:
+      "WashWorld descriptionnnnn sus ligtsskjtgrsisegb srghnnsugrvsrbWashWorld descriptionnnnn sus ligtsskjtgrsisegb srghnnsugrvsrbWashWorld descriptionnnnn sus ligtsskjtgrsisegb srghnnsugrvsrbWashWorld descriptionnnnn sus ligtsskjtgrsisegb srghnnsugrvsrbWashWorld descriptionnnnn sus ligtsskjtgrsisegb srghnnsugrvsrb suim ljsf nfdssu fsdg usdd uvfds genecs",
   },
   {
     slug: "daos",
@@ -34,6 +38,29 @@ export const projects: Project[] = [
     category: ["Frontend", "Full stack"],
     client: "Dansk Amatororkester samvirke",
     year: "2025",
-    shortDescription: "LUuulululu jgnhgofs ljsf nfdssu fsdg usdd uvfds genecs",
+    shortDescription:
+      "DAOS descriptionnnnnn o;jtmh ngilt krhedgouitlDAOS descriptionnnnnn o;jtmh ngilt krhedgouitlDAOS descriptionnnnnn o;jtmh ngilt krhedgouitlDAOS descriptionnnnnn o;jtmh ngilt krhedgouitlDAOS descriptionnnnnn o;jtmh ngilt krhedgouitl  ljsf nfdssu fsdg usdd uvfds genecs",
+  },
+  {
+    slug: "pondoo",
+    title: "Pondoo",
+    logo: PondooLogo,
+    bkgColor: "#F6EDE2",
+    category: ["Frontend", "UX/UI design"],
+    client: "Pondoo Aps",
+    year: "2025-26",
+    shortDescription:
+      "Pondoo description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf jbsPondoo description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf jbsPondoo description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf jbsPondoo description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf jbsPondoo description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf jbsPondoo description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf jbs ;fd svofe",
+  },
+  {
+    slug: "green-ux",
+    title: "Breathe for forests",
+    logo: GreenUXLogo,
+    bkgColor: "#243324",
+    category: ["Frontend", "UX/UI design"],
+    client: "University project",
+    year: "2025",
+    shortDescription:
+      "GreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf GreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbfGreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbfGreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbfGreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf,p;eglsjkv fsdgifsb ug addkfbf jbs ;fd svofe",
   },
 ];

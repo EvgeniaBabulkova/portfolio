@@ -10,9 +10,11 @@ export default function HomePage() {
     <>
       <h1>Lala title</h1>
 
-      {projects.map((project) => {
-        return <ProjectCard key={project.bkgColor} bkgColor={project.bkgColor} logo={project.logo} />;
-      })}
+      <ul className="flex gap-(--spacing-lg)">
+        {projects.map((project) => {
+          return <ProjectCard key={project.slug} bkgColor={project.bkgColor} logo={project.logo} slug={project.slug} />;
+        })}
+      </ul>
 
       <h1>Lala title</h1>
 
