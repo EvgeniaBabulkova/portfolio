@@ -9,7 +9,7 @@ body {
 }
 
 main {
-  padding-inline: 60px;
+  padding-inline: var(--page-gutter);
 }
 
 h1 {

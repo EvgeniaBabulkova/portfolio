@@ -4,17 +4,30 @@ import LinkIcon from "../assets/icons/arrow_outward.svg";
 import Tag from "../components/UI/Tag";
 import { projects } from "../data/projects";
 import ProjectCard from "../components/projects/ProjectCard";
+import Title from "../components/UI/Title";
+import carouselStyles from "../styles/projects/projectCarousel.module.css";
 
 export default function HomePage() {
   return (
     <>
-      <h1>Lala title</h1>
+      <section className={carouselStyles.projectsSection}>
+        <Title subtitle="Projects" title="See some of my work" />
 
-      <ul className="flex gap-(--spacing-lg)">
-        {projects.map((project) => {
-          return <ProjectCard key={project.slug} bkgColor={project.bkgColor} logo={project.logo} slug={project.slug} />;
-        })}
-      </ul>
+        <div className={carouselStyles.carouselContainer}>
+          <ul className={carouselStyles.carouselCards}>
+            {projects.map((project) => {
+              return (
+                <ProjectCard
+                  key={project.slug}
+                  bkgColor={project.bkgColor}
+                  logo={project.logo}
+                  slug={project.slug}
+                />
+              );
+            })}
+          </ul>
+        </div>
+      </section>
 
       <h1>Lala title</h1>
 

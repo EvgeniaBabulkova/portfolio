@@ -63,4 +63,15 @@ export const projects: Project[] = [
     shortDescription:
       "GreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf GreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbfGreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbfGreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbfGreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf,p;eglsjkv fsdgifsb ug addkfbf jbs ;fd svofe",
   },
+  {
+    slug: "tcc",
+    title: "The Clothing Club",
+    logo: TCCLogo,
+    bkgColor: "#075264",
+    category: ["UX/UI design"],
+    client: "The Clothing Club Aarhus",
+    year: "2024",
+    shortDescription:
+      "TCC description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf  description TCC description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf  descriptionhbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf,p;eglsjkv fsdgifsb ug addkfbf jbs ;fd svofe",
+  },
 ];
