@@ -15,3 +15,5 @@
   cursor: pointer;
   background: var(--col-surface-tertiary);
 }
+
+/* for the categories it may make sense to add flex-wrap: wrap - when resizing the page for the tags to wrap */

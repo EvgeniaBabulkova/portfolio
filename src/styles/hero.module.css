@@ -1,0 +1,6 @@
+.heroSection {
+  display: grid;
+  gap: var(--spacing-lg);
+  grid-template-columns: 0.6fr 0.4fr;
+  grid-template-rows: 300px;
+}
