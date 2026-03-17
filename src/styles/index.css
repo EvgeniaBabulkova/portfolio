@@ -29,3 +29,15 @@ h3 {
 h4 {
   font: var(--font-h4);
 }
+
+.icon svg {
+  fill: var(--col-text-primary);
+}
+
+.icon svg * {
+  fill: var(--col-text-primary);
+}
+
+.icon {
+  fill: var(--brand-yellow);
+}

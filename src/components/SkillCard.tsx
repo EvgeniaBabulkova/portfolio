@@ -21,7 +21,7 @@ export default function SkillCard({ title, content, icons, classes }: SkillCardP
         <p>{content}</p>
       </div>
 
-      <div className="flex flex-wrap gap-(--spacing-xs)">
+      <div className="flex flex-wrap gap-(--spacing-sm)">
         {icons?.map((icon) => (
           <img key={icon.id} src={icon.src} alt={icon.alt} width={24} height={24} />
         ))}

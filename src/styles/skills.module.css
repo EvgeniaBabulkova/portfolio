@@ -11,6 +11,7 @@
   background-color: var(--col-surface-primary);
   border-radius: var(--border-radius);
   padding: var(--spacing-lg);
+  gap: var(--spacing-md);
 }
 
 .skillsGrid {
