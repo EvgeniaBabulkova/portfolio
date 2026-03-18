@@ -23,6 +23,7 @@
 
   /* shadow */
   --shadow: 15px 15px 4px rgba(0, 0, 0, 0.5);
+  --shadow-title: 10px 8px 2px rgba(18, 18, 18, 1);
 
   /* border */
   --border-radius: 28px;
@@ -46,18 +47,18 @@
   --text-xxl: 36px;
 
   /* composite fonts */
-  --font-title: 900 68px "GillSansNova";
+  --font-title: 900 200px/1 "GillSansNova"; /* for HELLO */
+  --font-h1: 900 36px/1 "GillSansNova"; /* section titles */
 
-  --font-h1: 900 36px/1 "GillSansNova";
-  --font-h2: 800 36px "Outfit";
-  --font-h3: 700 28px "Outfit";
-  --font-h4: 800 24px "Outfit";
+  --font-h2: 800 36px "Outfit"; /* heading in hero */
+  --font-h3: 700 28px "Outfit"; /* skill card headings */
+  --font-h4: 800 24px "Outfit"; /* case studies brief section headings */
 
   --font-body-1: 400 16px "Outfit";
-  --font-bodyStd: 400 14px "Outfit";
+  --font-bodyStd: 400 14px "Outfit"; /* standard */
   --font-body-3: 400 12px "Outfit";
 
   --font-button: 700 16px "Outfit";
-  --font-label: 500 24px "Outfit";
-  --font-chip: 500 14px "Outfit";
+  --font-label: 500 24px "Outfit"; /* section headings subtitle */
+  --font-chip: 500 14px "Outfit"; /* tag */
 }

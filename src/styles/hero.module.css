@@ -1,6 +1,63 @@
 .heroSection {
   display: grid;
-  gap: var(--spacing-lg);
-  grid-template-columns: 0.6fr 0.4fr;
-  grid-template-rows: 300px;
+  gap: var(--spacing-md);
+  grid-template-columns: minmax(0, 0.6fr) minmax(0, 0.4fr);
+  grid-template-rows: 75vh;
+}
+
+.heroLeft {
+  background-color: var(--col-surface-invert);
+  color: var(--col-text-invert);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.heroRight {
+  background-color: var(--col-graph-1);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  display: grid;
+}
+
+.marquee {
+  display: inline-flex;
+  width: max-content;
+  animation: moveHello 40s linear infinite;
+}
+
+.marquee span {
+  flex-shrink: 0;
+  padding-right: var(--spacing-lg);
+  text-transform: uppercase;
+  font: var(--font-title);
+  text-shadow: var(--shadow-title);
+}
+
+.marqueeLeft span {
+  color: var(--col-text-secondary);
+}
+
+.marqueeRight {
+  position: relative;
+}
+
+.heroRight > img {
+  position: absolute;
+  align-self: end;
+  justify-self: end;
+  z-index: 10;
+  /* width: min(90%, 420px); */
+  max-width: 90%;
+  max-height: 60%;
+  padding-right: 1vw;
+}
+
+@keyframes moveHello {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }

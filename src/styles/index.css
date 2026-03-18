@@ -2,6 +2,11 @@
 @import "./variables.css";
 @import "./fonts.css";
 
+/* #root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+} */
+
 body {
   font: var(--font-bodyStd);
   background-color: var(--col-surface-secondary);
@@ -10,6 +15,9 @@ body {
 
 main {
   padding-inline: var(--page-gutter);
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 h1 {
@@ -28,16 +36,4 @@ h3 {
 
 h4 {
   font: var(--font-h4);
-}
-
-.icon svg {
-  fill: var(--col-text-primary);
-}
-
-.icon svg * {
-  fill: var(--col-text-primary);
-}
-
-.icon {
-  fill: var(--brand-yellow);
 }

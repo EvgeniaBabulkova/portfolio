@@ -10,18 +10,33 @@ import heroStyles from "../styles/hero.module.css";
 import skillsStyles from "../styles/skills.module.css";
 import SkillCard from "../components/SkillCard";
 import { databasesIcons, extraIcons, frontendIcons, uxuiIcons } from "../data/techIcons";
+import Eva from "../assets/eva.svg";
 
 export default function HomePage() {
   return (
     <>
       <section className={heroStyles.heroSection}>
-        <div className="bg-(--col-surface-invert) text-(--col-text-invert)">
-          I’m Eva, Frontend developer with UX/UI design background
-        </div>
-        <div className="bg-(--col-graph-1) ">helloooo</div>
-      </section>
+        <div className={heroStyles.heroLeft}>
+          <div className={`${heroStyles.marquee} ${heroStyles.marqueeLeft}`}>
+            <span>hello hello hello</span>
+            <span> hello hello hello</span>
+          </div>
 
-      <div className="h-20">lala</div>
+          <div className="flex flex-col gap-(--spacing-md) m-(--spacing-xl)">
+            <h2>I’M Eva, Frontend developer with UX/UI design background</h2>
+            <h4>experienced in building scalable React + TypeScript applications</h4>
+            <Button trailingIcon={<img src={LinkIcon} />}>View resume</Button>
+          </div>
+        </div>
+
+        <div className={heroStyles.heroRight}>
+          <div className={`${heroStyles.marquee} ${heroStyles.marqueeRight}`}>
+            <span>hello hello hello</span>
+            <span> hello hello hello</span>
+          </div>
+          <img src={Eva} alt="Evgenia Babulkova" />
+        </div>
+      </section>
 
       <section className={skillsStyles.skillsSection}>
         <Title subtitle="Skills" title="What do i do?" />
