@@ -18,9 +18,6 @@
   --col-warning: #ffc806;
   --col-error: #fe9f9f;
 
-  /* page gutter */
-  --page-gutter: 60px;
-
   /* shadow */
   --shadow: 15px 15px 4px rgba(0, 0, 0, 0.5);
   --shadow-title: 10px 8px 2px rgba(18, 18, 18, 1);
@@ -28,6 +25,10 @@
   /* border */
   --border-radius: 28px;
   --border-radius-full: 100px;
+
+  /* special spacing */
+  --page-gutter: 5.5vw;
+  --section-spacing: 8vh;
 
   /* spacing */
   --spacing-xs: 4px;

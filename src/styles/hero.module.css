@@ -46,7 +46,6 @@
   align-self: end;
   justify-self: end;
   z-index: 10;
-  /* width: min(90%, 420px); */
   max-width: 90%;
   max-height: 60%;
   padding-right: 1vw;

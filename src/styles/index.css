@@ -2,10 +2,13 @@
 @import "./variables.css";
 @import "./fonts.css";
 
-/* #root {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-} */
+#root {
+  /* display: grid;
+  grid-template-rows: auto 1fr auto; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 body {
   font: var(--font-bodyStd);
@@ -14,10 +17,12 @@ body {
 }
 
 main {
+  flex: 1;
   padding-inline: var(--page-gutter);
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: var(--section-spacing);
+  padding-bottom: var(--section-spacing);
 }
 
 h1 {
