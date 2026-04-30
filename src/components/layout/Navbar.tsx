@@ -7,11 +7,7 @@ export default function Navbar() {
     <nav className={navStyles.nav}>
       <Link to="/">{<img src={Logo} alt="Logo-evbubble" width={65} />}</Link>
       <div className={navStyles.rightNav}>
-        <a
-          href="../../../public/Resume-Evgenia-Babulkova-Jan-2026.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="/Resume-Evgenia-Babulkova-Jan-2026.pdf" target="_blank" rel="noopener noreferrer">
           Resume
         </a>
         <NavLink to="/about">About</NavLink>
