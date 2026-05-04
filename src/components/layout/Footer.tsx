@@ -1,22 +1,25 @@
 import Feet from "../../assets/footer-feet.svg";
-import { footerLinks, watermark } from "../../data/site";
+import { footerLinks, copyright } from "../../data/site";
 import LinkButton from "../UI/LinkButton";
+import footerStyles from "../../styles/footer.module.css";
 
 export default function Footer() {
   return (
-    <div className="flex gap-(--spacing-md) justify-between px-(--page-gutter)">
-      <div className="flex items-end justify-between w-screen pb-(--spacing-xl)">
-        <div className="flex flex-col uppercase">
-          <span>{watermark}</span>
+    <div className={footerStyles.footerContainer}>
+      <div className={footerStyles.footerLeft}>
+        <div className={`${footerStyles.footerMeta}`}>
+          <span>{copyright}</span>
           <span>design & code by Evgenia Babulkova</span>
         </div>
         <div className="flex">
           {footerLinks.map((link) => (
-            <LinkButton link={link.link} text={link.text} />
+            <LinkButton key={link.link} variant="secondary" link={link.link}>
+              {link.text}
+            </LinkButton>
           ))}
         </div>
       </div>
-      <img src={Feet} className="drop-shadow-(--shadow) w-[10vw] " />
+      <img src={Feet} className={footerStyles.footerImg} />
     </div>
   );
 }

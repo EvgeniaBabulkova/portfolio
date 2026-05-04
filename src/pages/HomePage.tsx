@@ -10,6 +10,8 @@ import skillsStyles from "../styles/skills.module.css";
 import SkillCard from "../components/SkillCard";
 import { databasesIcons, extraIcons, frontendIcons, uxuiIcons } from "../data/techIcons";
 import Eva from "../assets/eva.svg";
+import LinkButton from "../components/UI/LinkButton";
+import { resumeLink } from "../data/site";
 
 export default function HomePage() {
   return (
@@ -24,7 +26,7 @@ export default function HomePage() {
           <div className="flex flex-col gap-(--spacing-md) m-(--spacing-xl)">
             <h2>I’M Eva, Frontend developer with UX/UI design background</h2>
             <h4>experienced in building scalable React + TypeScript applications</h4>
-            <Button trailingIcon={<img src={LinkIcon} />}>View resume</Button>
+            <LinkButton link={resumeLink}>View Resume</LinkButton>
           </div>
         </div>
 

@@ -6,10 +6,10 @@
   padding: var(--spacing-md) var(--spacing-lg);
   font: var(--font-button);
   color: var(--col-text-primary);
+  transition: 0.2s ease;
 }
 
 .button:hover {
-  transition: 0.2s ease;
   transform: scale(1.07);
   cursor: pointer;
 }
@@ -25,3 +25,17 @@
 }
 
 /* for the categories it may make sense to add flex-wrap: wrap - when resizing the page for the tags to wrap */
+/* 
+@media (max-width: 600px) {    // todoooooooo
+  .button {
+    padding: var(--spacing-md) var(--spacing-md);
+    min-height: 44px;
+    font: var(--font-body-3);
+  }
+
+  .buttonPrimary {
+    width: 100%;
+    justify-content: center;
+    padding: var(--spacing-lg) var(--spacing-xl);
+  }
+} */
