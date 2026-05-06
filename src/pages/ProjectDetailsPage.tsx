@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { projects } from "../data/projects";
 import NotFountPage from "./NotFoundPage";
+import projectStyles from "../styles/projects/projectDetails.module.css";
 
 export default function ProjectDetailsPage() {
   const params = useParams();
@@ -14,9 +15,38 @@ export default function ProjectDetailsPage() {
   // i probably need a big switch statement for all the specific content components
 
   return (
-    <div>
-      <h1>{project.title}</h1>
-      <p>From here i'll add the specific prj details components...</p>
-    </div>
+    <>
+      <div className={projectStyles.topBanner} style={{ backgroundColor: project.bkgColor }}>
+        <img src={project.logo} alt="project-logo" />
+      </div>
+
+      <div>
+        <h1>{project.title}</h1>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+        <p>From here i'll add the specific prj details components...</p>
+      </div>
+    </>
   );
 }

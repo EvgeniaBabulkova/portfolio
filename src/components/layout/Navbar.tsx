@@ -19,7 +19,6 @@ export default function Navbar() {
         to="/"
         className={navStyles.logoLink}
         onClick={() => {
-          window.scrollTo({ top: 0, behavior: "smooth" });
           setIsMenuOpen(false);
         }}
       >
