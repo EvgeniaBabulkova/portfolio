@@ -83,7 +83,9 @@ export default function HomePage() {
       </section>
 
       <Banner subtitle="Contact" title="Let's get in touch!">
-        <Button trailingIcon={<img src={LinkIcon} />}>Button here</Button>
+        <Button onClick={() => {}} trailingIcon={<img src={LinkIcon} />}>
+          Button here
+        </Button>
       </Banner>
     </>
   );

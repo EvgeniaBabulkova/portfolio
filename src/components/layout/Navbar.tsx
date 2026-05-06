@@ -1,13 +1,35 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "../../assets/evbubble-logo.svg";
 import navStyles from "../../styles/nav.module.css";
 import { resumeLink } from "../../data/site";
+import Button from "../UI/Button";
+import MenuIcon from "../../assets/icons/menu.svg";
+import CloseIcon from "../../assets/icons/close.svg";
+import { useEffect, useState } from "react";
+import IconButton from "../UI/IconButton";
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location.pathname]);
+
   return (
     <nav className={navStyles.nav}>
-      <Link to="/">{<img src={Logo} alt="Logo-evbubble" width={65} />}</Link>
-      <div className={navStyles.rightNav}>
+      <Link
+        to="/"
+        className={navStyles.logoLink}
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          setIsMenuOpen(false);
+        }}
+      >
+        {<img src={Logo} alt="Logo-evbubble" />}
+      </Link>
+
+      <div className={`${navStyles.rightNav} ${isMenuOpen ? navStyles.rightNavOpen : ""}`}>
         <a href={resumeLink} target="_blank" rel="noopener noreferrer">
           Resume
         </a>
@@ -15,6 +37,23 @@ export default function Navbar() {
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </div>
+
+      <IconButton
+        onClick={() => setIsMenuOpen((currentIsMenuOpen) => !currentIsMenuOpen)}
+        classes={`${navStyles.menuButton} ${isMenuOpen ? navStyles.menuButtonOpen : ""}`}
+        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        icon={
+          <span className={navStyles.burgerIcon} aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </span>
+        }
+      />
     </nav>
   );
 }
+
+// desktop → rightNav visible
+// mobile closed → rightNav hidden
+// mobile open → rightNav - fullscreen overlay
