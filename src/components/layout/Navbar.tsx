@@ -2,9 +2,6 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "../../assets/evbubble-logo.svg";
 import navStyles from "../../styles/nav.module.css";
 import { resumeLink } from "../../data/site";
-import Button from "../UI/Button";
-import MenuIcon from "../../assets/icons/menu.svg";
-import CloseIcon from "../../assets/icons/close.svg";
 import { useEffect, useState } from "react";
 import IconButton from "../UI/IconButton";
 

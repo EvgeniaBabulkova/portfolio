@@ -35,7 +35,7 @@
 .burgerIcon {
   position: relative;
   width: 24px;
-  height: 18px;
+  height: 20px;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
