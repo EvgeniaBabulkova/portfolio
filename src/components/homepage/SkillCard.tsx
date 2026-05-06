@@ -1,4 +1,4 @@
-import skillsStyles from "../styles/skills.module.css";
+import skillsStyles from "../../styles/skills.module.css";
 
 type SkillIcon = {
   id: string;
