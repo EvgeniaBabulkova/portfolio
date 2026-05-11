@@ -16,6 +16,7 @@ export type Project = {
   shortDescription: string;
   livePreview?: string;
   figmaPrototype?: string;
+  sourceCode?: string;
 };
 
 export const projects: Project[] = [
@@ -28,7 +29,9 @@ export const projects: Project[] = [
     client: "Wash World",
     year: "2025",
     shortDescription:
-      "WashWorld descriptionnnnn sus ligtsskjtgrsisegb srghnnsugrvsrbWashWorld descriptionnnnn sus ligtsskjtgrsisegb srghnnsugrvsrbWashWorld descriptionnnnn sus ligtsskjtgrsisegb srghnnsugrvsrbWashWorld descriptionnnnn sus ligtsskjtgrsisegb srghnnsugrvsrbWashWorld descriptionnnnn sus ligtsskjtgrsisegb srghnnsugrvsrb suim ljsf nfdssu fsdg usdd uvfds genecs",
+      "WashWorld is the bigest car was company in Denmark. They are trying to improve the user experience of their current users and monetize on potential new users. This project consists of the research and ideation process to conceptualizing the necessary digitalization and potential features of an application that will enhance the users' experience with the brand and streamline te process of washingn their vehicles",
+    sourceCode: "https://github.com/EvgeniaBabulkova/wash-world",
+    figmaPrototype: "https://github.com/EvgeniaBabulkova/wash-world",
   },
   {
     slug: "daos",

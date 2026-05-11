@@ -1,9 +1,7 @@
-import Banner from "../components/Banner";
-import Button from "../components/UI/Button";
-import LinkIcon from "../assets/icons/arrow_outward.svg";
 import HeroSection from "../components/homepage/HeroSection";
 import SkillsSection from "../components/homepage/SkillsSection";
 import ProjectsSection from "../components/homepage/ProjectsSection";
+import ContactBanner from "../components/ContactBanner";
 
 export default function HomePage() {
   return (
@@ -11,12 +9,7 @@ export default function HomePage() {
       <HeroSection />
       <SkillsSection />
       <ProjectsSection />
-
-      <Banner subtitle="Contact" title="Let's get in touch!">
-        <Button onClick={() => {}} trailingIcon={<img src={LinkIcon} />}>
-          Button here
-        </Button>
-      </Banner>
+      <ContactBanner />
     </>
   );
 }

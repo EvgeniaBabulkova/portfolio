@@ -12,3 +12,70 @@
 .topBanner img {
   width: clamp(200px, 25%, 600px);
 }
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.metaWrapper {
+  display: flex;
+  align-items: start;
+  gap: var(--spacing-lg);
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: 120px 140px;
+  gap: var(--spacing-lg);
+  align-items: start;
+  flex-shrink: 0;
+}
+
+.metaGrid p {
+  font: var(--font-body-big);
+}
+
+.description {
+  flex: 1;
+  font: var(--font-body-big);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  width: 180px;
+}
+
+@media (max-width: 900px) {
+  .metaWrapper {
+    flex-wrap: wrap;
+  }
+
+  .metaGrid {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: unset;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .metaGrid p {
+    font: var(--font-body-1);
+  }
+
+  .description {
+    font: var(--font-body-1);
+  }
+}

@@ -20,6 +20,9 @@ export default function Navbar() {
         className={navStyles.logoLink}
         onClick={() => {
           setIsMenuOpen(false);
+          if (location.pathname === "/") {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
         }}
       >
         {<img src={Logo} alt="Logo-evbubble" />}
