@@ -1,6 +1,6 @@
 import heroStyles from "../../styles/hero.module.css";
 import LinkButton from "../UI/LinkButton";
-import Eva from "../../assets/eva.svg";
+import Eva from "../../assets/eva.webp";
 import { resumeLink } from "../../data/site";
 
 export default function HeroSection() {

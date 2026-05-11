@@ -1,4 +1,4 @@
-import Feet from "../../assets/footer-feet.svg";
+import Feet from "../../assets/footer-feet.webp";
 import { footerLinks, copyright } from "../../data/site";
 import LinkButton from "../UI/LinkButton";
 import footerStyles from "../../styles/footer.module.css";
