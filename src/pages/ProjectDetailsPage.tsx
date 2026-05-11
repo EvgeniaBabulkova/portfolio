@@ -29,7 +29,12 @@ export default function ProjectDetailsPage() {
         <div className={projectStyles.metaWrapper}>
           <div className={projectStyles.metaGrid}>
             <h5>Category</h5>
-            <p>{project.category}</p>
+            <div className={projectStyles.categoryList}>
+              {project.category.map((category) => (
+                <p key={category}>{category}</p>
+              ))}
+            </div>
+
             <h5>Client</h5>
             <p>{project.client}</p>
             <h5>Year</h5>

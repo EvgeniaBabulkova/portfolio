@@ -30,11 +30,16 @@
   grid-template-columns: 120px 140px;
   gap: var(--spacing-lg);
   align-items: start;
-  flex-shrink: 0;
 }
 
 .metaGrid p {
   font: var(--font-body-big);
+}
+
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
 }
 
 .description {
@@ -57,7 +62,6 @@
   .metaGrid {
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    justify-content: unset;
   }
 
   .description {
