@@ -58,6 +58,37 @@
 
 /* ----------------- */
 
+.stickySection {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+}
+
+.techStack {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl);
+  background-color: var(--col-surface-primary);
+  border-radius: var(--border-radius);
+  align-items: flex-start;
+  top: 100px;
+  width: 250px;
+  height: 60vh;
+}
+
+.screenshots {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.screenshots img {
+  border-radius: var(--border-radius);
+}
+
 @media (max-width: 900px) {
   .detailsBox {
     flex-wrap: wrap;
