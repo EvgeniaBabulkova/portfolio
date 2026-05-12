@@ -1,6 +1,6 @@
 import skillsStyles from "../../styles/skills.module.css";
 import SkillCard from "./SkillCard";
-import { databasesIcons, extraIcons, frontendIcons, uxuiIcons } from "../../data/techIcons";
+import { databasesTech, extraTech, frontendTech, uxuiTech } from "../../data/techIcons";
 import Title from "../UI/Title";
 
 export default function SkillsSection() {
@@ -11,22 +11,22 @@ export default function SkillsSection() {
         <SkillCard
           title="Title"
           content="content contentcontent contentcontent contentcontent contentcontent contentcontent content"
-          icons={frontendIcons}
+          tech={frontendTech}
           classes={skillsStyles.frontend}
         />
         <SkillCard
           title="Title"
           content="content contentcontent contentcontent contentcontent contentcontent contentcontent content"
-          icons={uxuiIcons}
+          tech={uxuiTech}
           classes={skillsStyles.uxui}
         />
         <SkillCard
           title="Title"
           content="content contentcontent contentcontent contentcontent contentcontent contentcontent content"
-          icons={extraIcons}
+          tech={extraTech}
           classes={skillsStyles.extra}
         />
-        <SkillCard title="Title" icons={databasesIcons} classes={skillsStyles.databases} />
+        <SkillCard title="Title" tech={databasesTech} classes={skillsStyles.databases} />
       </div>
     </section>
   );

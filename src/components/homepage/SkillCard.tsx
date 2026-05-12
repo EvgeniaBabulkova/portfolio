@@ -1,19 +1,14 @@
+import { techIconMap } from "../../data/techIcons";
 import skillsStyles from "../../styles/skills.module.css";
-
-type SkillIcon = {
-  id: string;
-  src: string;
-  alt: string;
-};
 
 type SkillCardProps = {
   title: string;
   content?: string;
-  icons?: SkillIcon[];
+  tech?: string[];
   classes?: string;
 };
 
-export default function SkillCard({ title, content, icons, classes }: SkillCardProps) {
+export default function SkillCard({ title, content, tech, classes }: SkillCardProps) {
   return (
     <div className={`${skillsStyles.skillCard} ${classes && classes}`}>
       <div className="flex flex-col gap-(--spacing-md)">
@@ -22,9 +17,11 @@ export default function SkillCard({ title, content, icons, classes }: SkillCardP
       </div>
 
       <div className="flex flex-wrap gap-(--spacing-sm)">
-        {icons?.map((icon) => (
-          <img key={icon.id} src={icon.src} alt={icon.alt} width={24} height={24} />
-        ))}
+        {tech?.map((tech) => {
+          const iconSrc = techIconMap[tech];
+          if (!iconSrc) return null;
+          return <img src={iconSrc} alt={tech} width={24} height={24} />;
+        })}
       </div>
     </div>
   );
