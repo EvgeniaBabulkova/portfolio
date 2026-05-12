@@ -58,24 +58,40 @@
 
 /* ----------------- */
 
-.stickySection {
+.projectBody {
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-lg);
 }
 
 .techStack {
-  position: sticky;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--spacing-lg);
   padding: var(--spacing-xl);
   background-color: var(--col-surface-primary);
   border-radius: var(--border-radius);
-  align-items: flex-start;
+  position: sticky;
   top: 100px;
-  width: 250px;
-  height: 60vh;
+}
+
+.techItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  width: 60px;
+}
+
+.techItem img {
+  width: 26px;
+  height: 26px;
+}
+
+.techItem p {
+  font: var(--font-body-3);
+  color: var(--col-text-details);
 }
 
 .screenshots {
@@ -106,6 +122,18 @@
   .prjButtons {
     flex-direction: row;
     width: 100%;
+  }
+
+  .projectBody {
+    flex-direction: column;
+  }
+
+  .techStack {
+    width: 100%;
+    align-items: start;
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 

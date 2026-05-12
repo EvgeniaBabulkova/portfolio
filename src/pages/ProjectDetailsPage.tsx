@@ -4,8 +4,7 @@ import NotFountPage from "./NotFoundPage";
 import projectStyles from "../styles/projects/projectDetails.module.css";
 import ContactBanner from "../components/ContactBanner";
 import ProjectDetails from "../components/projects/ProjectDetails";
-import ProjectStickySection from "../components/projects/ProjectPhSection";
-import ProjectPhSection from "../components/projects/ProjectPhSection";
+import ProjectBody from "../components/projects/ProjectBody";
 
 export default function ProjectDetailsPage() {
   const params = useParams();
@@ -31,9 +30,7 @@ export default function ProjectDetailsPage() {
         <img src={project.logo} alt="project-logo" />
       </div>
       <ProjectDetails project={project} />
-
-      <ProjectPhSection project={project} getProjectImageSrc={getProjectImageSrc} />
-
+      <ProjectBody project={project} getProjectImageSrc={getProjectImageSrc} />
       <ContactBanner />
     </>
   );

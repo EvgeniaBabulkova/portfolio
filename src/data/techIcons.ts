@@ -2,6 +2,12 @@ import ReactIcon from "../assets/icons/react.svg";
 import TsIcon from "../assets/icons/typescript.svg";
 import CssIcon from "../assets/icons/css.svg";
 
+export const techIconMap: Record<string, string> = {
+  React: ReactIcon,
+  TypeScript: TsIcon,
+  CSS: CssIcon,
+};
+
 export const frontendIcons = [
   { id: "react", src: ReactIcon, alt: "React" },
   { id: "typescript", src: TsIcon, alt: "TypeScript" },
