@@ -22,6 +22,13 @@ export default function ProjectBody({ project, getProjectImageSrc }: ProjectStic
       </ul>
 
       <div className={projectStyles.screenshots}>
+        {project.videoId && (
+          <iframe
+            src={`https://www.youtube.com/embed/${project.videoId}?start=92&rel=0`}
+            allowFullScreen
+            className={projectStyles.projectVideo}
+          />
+        )}
         {project.screenshots.map((photo) => {
           const src = getProjectImageSrc(project.slug, photo.file);
           if (!src) return null;

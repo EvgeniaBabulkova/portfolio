@@ -24,6 +24,7 @@ export type Project = {
   sourceCode?: string;
   tech: string[];
   screenshots: ProjectScreenshot[];
+  videoId?: string;
 };
 
 export const projects: Project[] = [
@@ -38,13 +39,19 @@ export const projects: Project[] = [
     shortDescription:
       "WashWorld is the bigest car was company in Denmark. They are trying to improve the user experience of their current users and monetize on potential new users. This project consists of the research and ideation process to conceptualizing the necessary digitalization and potential features of an application that will enhance the users' experience with the brand and streamline te process of washingn their vehicles",
     sourceCode: "https://github.com/EvgeniaBabulkova/wash-world",
-    tech: ["React", "CSS", "TypeScript", "TypeScript", "TypeScript", "TypeScript"],
+    tech: ["React Native", "Expo Router", "NestJS", "PostgreSQL", "Redux", "Tailwind CSS", "Jest", "Figma"],
     screenshots: [
-      { file: "ww-img1.png", alt: "Wash World app home screen" },
-      { file: "ww-img1.png", alt: "Wash World app home screen" },
-      { file: "ww-img1.png", alt: "Wash World app home screen" },
-      { file: "ww-img2.png", alt: "Wash World booking flow screen" },
+      { file: "ww-develop-database-design.png", alt: "Wash World - database design" },
+      { file: "ww-research-the-client.png", alt: "Wash World client research" },
+      { file: "ww-research-user-journey.png", alt: "Wash World user journey mapping" },
+      { file: "ww-ideate-sweet-spot.png", alt: "Wash World feature sweet spot" },
+      { file: "ww-define-wireflow.png", alt: "Wash World wireflow" },
+      { file: "ww-research-brand-identity.png", alt: "Wash World brand identity" },
+      { file: "ww-prototype-hifi1.png", alt: "High fidelity Figma prototype" },
+      { file: "ww-prototype-hifi2.png", alt: "High fidelity Figma prototype - washing flow" },
+      { file: "ww-testing-bert.png", alt: "BERT testing" },
     ],
+    videoId: "5JXbFxOoWTQ",
   },
   {
     slug: "daos",

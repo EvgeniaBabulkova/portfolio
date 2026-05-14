@@ -15,24 +15,24 @@ import Jest from "../assets/icons/jest.svg";
 import Axios from "../assets/icons/axios.svg";
 import Atlassian from "../assets/icons/atlassian.svg";
 import Expo from "../assets/icons/expo.svg";
+import Tanstack from "../assets/icons/tanstack.svg";
 
 // "lookup" table
 export const techIconMap: Record<string, string> = {
   React: React,
   TypeScript: TypeScript,
   CSS: Css,
-  Tailwind: Tailwind,
   TypeORM: Typeorm,
   Redux: Redux,
   PostgreSQL: Postgresql,
   Nodejs: Nodejs,
   NestJS: Nestjs,
   MongoDB: MongoDb,
-  MongoDb: MongoDb,
   HTML5: Html5,
   Figma: Figma,
   Jest: Jest,
   Axios: Axios,
+  Tanstack: Tanstack,
   Atlassian: Atlassian,
   "Tailwind CSS": Tailwind,
   "React Native": ReactNative,
@@ -41,7 +41,17 @@ export const techIconMap: Record<string, string> = {
 };
 
 // skills section tech
-export const frontendTech = ["React", "TypeScript", "HTML5", "CSS", "Tailwind", "Redux", "React Native", "Expo Router"];
+export const frontendTech = [
+  "React",
+  "TypeScript",
+  "HTML5",
+  "CSS",
+  "Tailwind",
+  "Redux",
+  "Tanstack",
+  "React Native",
+  "Expo Router",
+];
 export const uxuiTech = ["Figma", "CSS", "Tailwind"];
 export const extraTech = ["Jest", "Axios", "Atlassian"];
 export const databasesTech = ["PostgreSQL", "MongoDB", "TypeORM"];
