@@ -74,6 +74,8 @@
   border-radius: var(--border-radius);
   position: sticky;
   top: 100px;
+  max-height: calc(100svh - 140px);
+  flex-wrap: wrap;
 }
 
 .techItem {
@@ -137,10 +139,13 @@
 
   .techStack {
     width: 100%;
-    align-items: start;
     position: static;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); /*adds pseudo cards to fix uneven spacings*/
+    height: auto;
+    align-items: center;
+    justify-items: center;
+    column-gap: var(--spacing-sm);
   }
 }
 
