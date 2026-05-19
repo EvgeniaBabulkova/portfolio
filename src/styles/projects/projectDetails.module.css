@@ -13,7 +13,7 @@
   width: clamp(200px, 25%, 600px);
 }
 
-/* ----------------- */
+/* ------------------------------------ */
 
 .details {
   display: flex;
@@ -56,7 +56,7 @@
   width: 180px;
 }
 
-/* ----------------- */
+/* -------------------------------- */
 
 .projectBody {
   display: flex;
@@ -74,7 +74,7 @@
   border-radius: var(--border-radius);
   position: sticky;
   top: 100px;
-  max-height: calc(100svh - 140px);
+  max-height: calc(100svh - 120px);
   flex-wrap: wrap;
 }
 
@@ -96,6 +96,8 @@
   color: var(--col-text-details);
 }
 
+/* ---------------------------------- */
+
 .screenshots {
   flex: 1;
   display: flex;
@@ -105,6 +107,7 @@
 
 .screenshots img {
   border-radius: var(--border-radius);
+  cursor: pointer;
 }
 
 .projectVideo {
@@ -113,6 +116,39 @@
   border: none;
   border-radius: var(--border-radius);
 }
+
+/* ---------------------------------- */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--overlay);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlayClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.overlayImg {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: var(--border-radius);
+}
+
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* ---------------------------------- */
 
 @media (max-width: 900px) {
   .detailsBox {
