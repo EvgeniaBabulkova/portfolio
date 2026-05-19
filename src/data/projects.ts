@@ -37,7 +37,7 @@ export const projects: Project[] = [
     client: "Wash World",
     year: "2025",
     shortDescription:
-      "WashWorld is the bigest car was company in Denmark. They are trying to improve the user experience of their current users and monetize on potential new users. This project consists of the research and ideation process to conceptualizing the necessary digitalization and potential features of an application that will enhance the users' experience with the brand and streamline te process of washingn their vehicles",
+      "WashWorld is Denmark's biggest car wash chain. The project focused on designing and building a mobile app to convert occasional users into subscribers. This meant spanning from UX research and Figma prototyping to a full React Native + NestJS implementation - focusing on role-based authentication, membership flows, Redux state management, PostgreSQL database relations and unit testing.",
     sourceCode: "https://github.com/EvgeniaBabulkova/wash-world",
     tech: ["React Native", "Expo Router", "NestJS", "PostgreSQL", "Redux", "Tailwind CSS", "Jest", "Figma"],
     screenshots: [
