@@ -37,3 +37,28 @@
   width: 100%;
   height: 100%;
 }
+
+/* --------------------------------- */
+
+.carouselControls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.paginationPill {
+  width: 24px;
+  height: 8px;
+  border: none;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition:
+    width 200ms ease,
+    background-color 200ms ease;
+}
+
+.paginationPillActive {
+  width: 84px;
+  background-color: var(--col-graph-3);
+}

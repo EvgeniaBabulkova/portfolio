@@ -9,10 +9,10 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ logo, bkgColor, slug }: ProjectCardProps) {
   return (
-    <li className={carouselStyles.card} style={{ backgroundColor: bkgColor }}>
+    <div className={carouselStyles.card} style={{ backgroundColor: bkgColor }}>
       <Link to={`/projects/${slug}`} className={carouselStyles.cardLink}>
         <img src={logo} alt="project-logo" width={200} />
       </Link>
-    </li>
+    </div>
   );
 }
