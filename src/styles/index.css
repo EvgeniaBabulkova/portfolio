@@ -3,8 +3,6 @@
 @import "./fonts.css";
 
 #root {
-  /* display: grid;
-  grid-template-rows: auto 1fr auto; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -46,3 +44,5 @@ h4 {
 h5 {
   font: var(--font-h5);
 }
+
+/* note - breakpoints for the headers */

@@ -6,13 +6,17 @@ type SkillCardProps = {
   content?: string;
   tech?: string[];
   classes?: string;
+  favorabilityStar?: boolean;
 };
 
-export default function SkillCard({ title, content, tech, classes }: SkillCardProps) {
+export default function SkillCard({ title, content, tech, classes, favorabilityStar }: SkillCardProps) {
   return (
     <div className={`${skillsStyles.skillCard} ${classes && classes}`}>
       <div className="flex flex-col gap-(--spacing-md)">
-        <h4>{title}</h4>
+        <div className="flex gap-(--spacing-sm)">
+          <h4>{title}</h4>
+          {favorabilityStar && <h5 className={skillsStyles.favorabilityStar}>★</h5>}
+        </div>
         <p>{content}</p>
       </div>
 

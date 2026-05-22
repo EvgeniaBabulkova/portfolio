@@ -13,6 +13,7 @@ export default function SkillsSection() {
           content="Crossed from UX/UI into frontend development at QAMPO ApS, building and maintaining React + TypeScript features for Pondoo - home care visit production software used by Danish municipalities. Worked within existing complex systems, integrating new functionality with a focus on component reusability and design systems."
           tech={frontendTech}
           classes={skillsStyles.frontend}
+          favorabilityStar
         />
         <SkillCard
           title="Backend"
