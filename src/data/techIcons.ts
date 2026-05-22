@@ -49,9 +49,10 @@ export const frontendTech = [
   "Tailwind",
   "Redux",
   "Tanstack",
+  "Axios",
   "React Native",
   "Expo Router",
 ];
-export const uxuiTech = ["Figma", "CSS", "Tailwind"];
-export const extraTech = ["Jest", "Axios", "Atlassian"];
-export const databasesTech = ["PostgreSQL", "MongoDB", "TypeORM"];
+export const uxuiTech = ["Figma", "Atlassian"];
+export const backendTech = ["NestJS", "Node.js", "Jest", "TypeORM"];
+export const databasesTech = ["PostgreSQL", "MongoDB"];

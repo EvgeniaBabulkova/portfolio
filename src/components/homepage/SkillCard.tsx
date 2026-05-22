@@ -16,11 +16,11 @@ export default function SkillCard({ title, content, tech, classes }: SkillCardPr
         <p>{content}</p>
       </div>
 
-      <div className="flex flex-wrap gap-(--spacing-sm)">
+      <div className="flex flex-wrap gap-(--spacing-md)">
         {tech?.map((tech) => {
           const iconSrc = techIconMap[tech];
           if (!iconSrc) return null;
-          return <img src={iconSrc} alt={tech} width={24} height={24} />;
+          return <img src={iconSrc} alt={tech} title={tech} width={24} height={24} className={skillsStyles.techIcon} />;
         })}
       </div>
     </div>
