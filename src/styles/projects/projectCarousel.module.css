@@ -23,11 +23,15 @@
   width: max-content;
 }
 
-.card {
+/* moving the card width to the list item, so the carousel controls can calculate it more reliably */
+.carouselCards li {
   width: 320px;
+  scroll-snap-align: start;
+}
+
+.card {
   height: 450px;
   border-radius: var(--border-radius);
-  scroll-snap-align: start;
 }
 
 .cardLink {
@@ -43,15 +47,16 @@
 .carouselControls {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  align-items: center;
+  gap: var(--spacing-lg);
+  cursor: pointer;
 }
 
 .paginationPill {
   width: 24px;
   height: 8px;
-  border: none;
-  border-radius: 999px;
-  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: var(--border-radius-full);
+  background-color: var(--col-surface-tertiary);
   cursor: pointer;
   transition:
     width 200ms ease,
@@ -61,4 +66,10 @@
 .paginationPillActive {
   width: 84px;
   background-color: var(--col-graph-3);
+}
+
+.carouselButtons {
+  color: var(--col-text-details);
+  font-size: 24px;
+  cursor: pointer;
 }
