@@ -21,6 +21,10 @@
   grid-auto-rows: minmax(70px, auto);
 }
 
+.skillCard p {
+  color: var(--col-text-details);
+}
+
 .frontend {
   grid-row: span 5;
 }
