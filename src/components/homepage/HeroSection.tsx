@@ -13,8 +13,8 @@ export default function HeroSection() {
         </div>
 
         <div className="flex flex-col gap-(--spacing-md) m-(--spacing-xl)">
-          <h2>I’M Eva, Frontend developer with UX/UI design background</h2>
-          <h4>experienced in building scalable React + TypeScript applications</h4>
+          <h3>I’M Eva, Frontend developer with UX/UI design background</h3>
+          <h5>experienced in building scalable React + TypeScript applications</h5>
           <LinkButton link={resumeLink}>View Resume</LinkButton>
         </div>
       </div>

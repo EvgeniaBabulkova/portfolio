@@ -56,9 +56,9 @@
   --font-h1: 900 36px/1 "GillSansNova"; /* section titles */
 
   --font-h2: 800 36px "Outfit"; /* heading in hero */
-  --font-h3: 700 28px "Outfit"; /* skill card headings */
+  --font-h3: 800 28px "Outfit"; /* skill card headings */
   --font-h4: 800 24px "Outfit"; /* case studies brief section headings */
-  --font-h5: 800 20px "Outfit"; /* case studies brief section headings */
+  --font-h5: 700 20px "Outfit"; /* case studies brief section headings */
 
   --font-body-big: 400 20px "Outfit"; /* prj brief details */
   --font-body-1: 400 16px "Outfit";
