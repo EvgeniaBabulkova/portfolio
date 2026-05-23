@@ -62,7 +62,8 @@ export default function ProjectsSection() {
   const paginationItems = Array.from({ length: paginationCount });
 
   return (
-    <section className={carouselStyles.projectsSection}>
+    // temporary id for nav scroll:
+    <section id="projects" className={carouselStyles.projectsSection}>
       <Title subtitle="Projects" title="See some of my work" />
       <div ref={carouselRef} className={carouselStyles.carouselContainer}>
         <ul className={carouselStyles.carouselCards}>

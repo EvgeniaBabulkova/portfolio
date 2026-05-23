@@ -1,4 +1,4 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import Logo from "../../assets/evbubble-logo.svg";
 import navStyles from "../../styles/nav.module.css";
 import { resumeLink } from "../../data/site";
@@ -8,6 +8,7 @@ import IconButton from "../UI/IconButton";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate(); // temporary for nav scroll
 
   useEffect(() => {
     setIsMenuOpen(false);
@@ -33,8 +34,37 @@ export default function Navbar() {
           Resume
         </a>
         <NavLink to="/about">About</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        {/* temporary for nav scroll: */}
+        <NavLink
+          to="/projects"
+          onClick={(e) => {
+            e.preventDefault();
+            setIsMenuOpen(false);
+            if (location.pathname !== "/") {
+              navigate("/");
+              setTimeout(() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" }), 80);
+            } else {
+              document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+        >
+          Projects
+        </NavLink>
+        <NavLink
+          to="/contact"
+          onClick={(e) => {
+            e.preventDefault();
+            setIsMenuOpen(false);
+            if (location.pathname !== "/") {
+              navigate("/");
+              setTimeout(() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }), 80);
+            } else {
+              document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+        >
+          Contact
+        </NavLink>
       </div>
 
       <IconButton
