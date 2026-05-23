@@ -5,6 +5,7 @@ import projectStyles from "../styles/projects/projectDetails.module.css";
 import ContactBanner from "../components/ContactBanner";
 import ProjectDetails from "../components/projects/ProjectDetails";
 import ProjectBody from "../components/projects/ProjectBody";
+import UnderConstruction from "../components/UnderConstruction";
 
 export default function ProjectDetailsPage() {
   const params = useParams();
@@ -29,9 +30,17 @@ export default function ProjectDetailsPage() {
       <div className={projectStyles.topBanner} style={{ backgroundColor: project.bkgColor }}>
         <img src={project.logo} alt="project-logo" />
       </div>
-      <ProjectDetails project={project} />
-      <ProjectBody project={project} getProjectImageSrc={getProjectImageSrc} />
-      <ContactBanner />
+      {project.slug !== "wash-world" ? ( // temporary solution 🥲
+        <>
+          <UnderConstruction />
+        </>
+      ) : (
+        <>
+          <ProjectDetails project={project} />
+          <ProjectBody project={project} getProjectImageSrc={getProjectImageSrc} />
+          <ContactBanner />
+        </>
+      )}
     </>
   );
 }

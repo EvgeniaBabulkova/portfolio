@@ -1,0 +1,58 @@
+.underConstruction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.titleWrap {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.cursor {
+  color: var(--col-graph-3);
+  font-size: 1.5rem;
+  transition: opacity 0.1s;
+}
+
+.cursor.visible {
+  opacity: 1;
+}
+.cursor.hidden {
+  opacity: 0;
+}
+
+.progressTrack {
+  width: 200px;
+  height: 4px;
+  background: var(--col-surface-tertiary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: var(--col-graph-3);
+  border-radius: var(--radius-full);
+  animation: fillBar 3s ease-out forwards;
+}
+
+@keyframes fillBar {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 65%;
+  }
+  100% {
+    width: 72%;
+  }
+}
+
+@media (max-width: 600px) {
+  .titleWrap span {
+    display: none;
+  }
+}

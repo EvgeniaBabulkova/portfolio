@@ -44,14 +44,14 @@ export const techIconMap: Record<string, string> = {
 export const frontendTech = [
   "React",
   "TypeScript",
-  "HTML5",
-  "CSS",
-  "Tailwind",
+  // "HTML5", // not sure it makes sense to add..
+  // "CSS",
+  "Tailwind CSS",
+  "React Native",
+  "Expo Router",
   "Redux",
   "Tanstack",
   "Axios",
-  "React Native",
-  "Expo Router",
 ];
 export const uxuiTech = ["Figma", "Atlassian"];
 export const backendTech = ["NestJS", "Node.js", "Jest", "TypeORM"];

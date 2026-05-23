@@ -68,4 +68,7 @@
   --font-button: 700 16px "Outfit";
   --font-label: 500 24px "Outfit"; /* section headings subtitle */
   --font-chip: 500 14px "Outfit"; /* tag */
+
+  --font-h1-mobile: 900 28px/1 "GillSansNova";
+  --font-label-mobile: 500 20px "Outfit";
 }

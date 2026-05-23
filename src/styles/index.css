@@ -45,4 +45,10 @@ h5 {
   font: var(--font-h5);
 }
 
-/* note - breakpoints for the headers */
+/* note - add breakpoints for the headers */
+
+@media (max-width: 600px) {
+  h1 {
+    font: var(--font-h1-mobile);
+  }
+}
