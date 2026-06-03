@@ -12,6 +12,7 @@ type ProjectStickySectionProps = {
 
 export default function ProjectBody({ project, getProjectImageSrc }: ProjectStickySectionProps) {
   const [enlargedSrc, setEnlargedSrc] = useState<string | null>(null); // ph source or nothing
+  const videoStart = project.videoStartSeconds ? `&start=${project.videoStartSeconds}` : "";
 
   return (
     <div className={projectStyles.projectBody}>
@@ -26,7 +27,7 @@ export default function ProjectBody({ project, getProjectImageSrc }: ProjectStic
       <div className={projectStyles.screenshots}>
         {project.videoId && (
           <iframe
-            src={`https://www.youtube.com/embed/${project.videoId}?start=92&rel=0&vq=hd1080`}
+            src={`https://www.youtube.com/embed/${project.videoId}?rel=0&vq=hd1080${videoStart}`}
             allowFullScreen
             className={projectStyles.projectVideo}
           />

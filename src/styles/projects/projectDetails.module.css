@@ -29,7 +29,7 @@
 
 .labelsGrid {
   display: grid;
-  grid-template-columns: 120px 140px;
+  grid-template-columns: 120px 150px;
   gap: var(--spacing-lg);
   align-items: start;
 }
@@ -41,7 +41,7 @@
 .categoryList {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-xs);
 }
 
 .description {

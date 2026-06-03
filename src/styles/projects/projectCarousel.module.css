@@ -56,7 +56,7 @@
   width: 24px;
   height: 8px;
   border-radius: var(--border-radius-full);
-  background-color: var(--col-surface-tertiary);
+  background-color: var(--col-text-details);
   cursor: pointer;
   transition:
     width 200ms ease,

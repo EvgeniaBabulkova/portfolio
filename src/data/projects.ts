@@ -25,6 +25,7 @@ export type Project = {
   tech: string[];
   screenshots: ProjectScreenshot[];
   videoId?: string;
+  videoStartSeconds?: number;
 };
 
 export const projects: Project[] = [
@@ -52,6 +53,7 @@ export const projects: Project[] = [
       { file: "ww-testing-bert.png", alt: "BERT testing" },
     ],
     videoId: "5JXbFxOoWTQ",
+    videoStartSeconds: 92,
   },
   {
     slug: "daos",
@@ -59,15 +61,17 @@ export const projects: Project[] = [
     logo: DaosLogo,
     bkgColor: "#FFFFFF",
     category: ["Frontend", "Full stack"],
-    client: "Dansk Amatororkester samvirke",
-    year: "2025",
+    client: "DAOS",
+    year: "2024",
     shortDescription:
-      "DAOS descriptionnnnnn o;jtmh ngilt krhedgouitlDAOS descriptionnnnnn o;jtmh ngilt krhedgouitlDAOS descriptionnnnnn o;jtmh ngilt krhedgouitlDAOS descriptionnnnnn o;jtmh ngilt krhedgouitlDAOS descriptionnnnnn o;jtmh ngilt krhedgouitl  ljsf nfdssu fsdg usdd uvfds genecs",
-    tech: ["React", "CSS", "TypeScript"],
+      "DAOS is the national organization for Danish amateur orchestras and ensembles. The project focused on building a platform where musicians can find ensembles to join and post opportunities to find other musicians. The stack spanned React + NestJS with MongoDB, covering ensemble management, member administration, post filtering by instrument and genre and an application flow for accepting and rejecting musician requests.",
+    sourceCode: "https://github.com/EvgeniaBabulkova/DAOS-frontend",
+    tech: ["React", "TypeScript", "NestJS", "MongoDB", "Tailwind CSS", "Tanstack"],
     screenshots: [
-      { file: "WashWorldScreen1", alt: "Wash World app home screen" },
-      { file: "WashWorldScreen2", alt: "Wash World booking flow screen" },
+      { file: "daos-user-flow.png", alt: "DAOS User flow illustration" },
+      { file: "daos-wireflow.png", alt: "DAOS Wireflow based on the user flow" },
     ],
+    videoId: "hZ1k8a6-tWo",
   },
 
   {
