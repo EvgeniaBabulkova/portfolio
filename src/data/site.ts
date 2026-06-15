@@ -1,5 +1,5 @@
 //   { text: "Email", link: "mailto:your@email.com?subject=Hello&body=Hi%20there" }, // for email
-export const resumeLink = "/Resume-Evgenia-Babulkova-Jan-2026.pdf";
+export const resumeLink = "/Resume-Evgenia-Babulkova.pdf";
 
 type Link = {
   text: string;
