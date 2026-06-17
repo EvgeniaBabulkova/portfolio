@@ -1,12 +1,15 @@
 .nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 1rem;
   position: sticky;
   top: 0;
   z-index: 2;
   width: 100%;
+}
+
+.navContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 1.5rem;
 }
 
 .logoLink {
@@ -42,6 +45,7 @@
 }
 
 .burgerIcon span {
+  mix-blend-mode: difference;
   display: block;
   height: 2px;
   width: 100%;
@@ -63,6 +67,16 @@
 }
 
 @media (max-width: 600px) {
+  .navContent {
+    background: var(--col-surface-secondary);
+    border-radius: var(--border-radius-full);
+    margin: 0.5rem 0.5rem;
+    padding: 0.7rem 0.7rem;
+  }
+
+  .logoLink img {
+    width: clamp(45px, 4vw, 55px);
+  }
   .rightNav {
     display: none;
   }
