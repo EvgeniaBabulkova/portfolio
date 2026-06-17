@@ -74,18 +74,9 @@
   }
 }
 
-/* @media (max-width: 900px) {
-  .footerLeft {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    gap: var(--spacing-md);
-  }
-} */
-
 @media (max-width: 600px) {
   .heroSection {
     grid-template-columns: 1fr;
-    grid-template-rows: 70vh;
   }
 
   .heroRight {
