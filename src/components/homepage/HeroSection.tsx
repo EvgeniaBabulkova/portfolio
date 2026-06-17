@@ -13,7 +13,7 @@ export default function HeroSection() {
         </div>
 
         <div className="flex flex-col gap-(--spacing-md) m-(--spacing-xl) mr-(--spacing-3xl)">
-          <h3>I’M Eva, Frontend developer with UX/UI design background</h3>
+          <h3>I’m Eva, Frontend developer with UX/UI design background</h3>
           <h5>experienced in building scalable React + TypeScript applications</h5>
           <LinkButton link={resumeLink}>View Resume</LinkButton>
         </div>
@@ -24,6 +24,10 @@ export default function HeroSection() {
           <span>hello hello hello</span>
           <span> hello hello hello</span>
         </div>
+
+        <h5 className={heroStyles.mobileIntro}>
+          I’m Eva, <span className="text-(--col-text-primary)">Frontend developer</span> with UX/UI design background
+        </h5>
         <img src={Eva} alt="Evgenia Babulkova" />
       </div>
     </section>
