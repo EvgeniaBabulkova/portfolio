@@ -14,6 +14,92 @@ body {
   color: var(--col-text-primary);
 }
 
+/* --------------------------------------------------------------------- */
+
+/* soo we have 2 pseudo elements - one with the embedded svg that is slightly moving outside of the viewport, so it can create the illusion of noise */
+/* and another one that's holding the blobs that have lineal gradients to add some more texture to the background */
+
+body::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.5' numOctaves='2' stitchTiles='stitch' result='noise'/%3E%3CfeColorMatrix in='noise' type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 350px 350px;
+  background-repeat: repeat;
+  animation: grain 1s steps(6) infinite;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.1), transparent 10%),
+    radial-gradient(circle at 75% 25%, rgba(53, 118, 119, 0.1), transparent 30%),
+    radial-gradient(circle at 25% 75%, rgba(34, 67, 75, 0.2), transparent 20%),
+    radial-gradient(circle at 80% 80%, rgba(58, 55, 55, 0.5), transparent 55%);
+  filter: blur(20px);
+  /* stopping the animation on the moving blobs: */
+  /* animation: floatingBlobs 3s ease-in-out infinite alternate;
+  will-change: transform; */
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-2%, -3%);
+  }
+  20% {
+    transform: translate(3%, 2%);
+  }
+  30% {
+    transform: translate(-3%, 1%);
+  }
+  40% {
+    transform: translate(2%, -2%);
+  }
+  50% {
+    transform: translate(-1%, 3%);
+  }
+  60% {
+    transform: translate(3%, -1%);
+  }
+  70% {
+    transform: translate(-2%, 2%);
+  }
+  80% {
+    transform: translate(1%, -3%);
+  }
+  90% {
+    transform: translate(-3%, -2%);
+  }
+}
+
+/* @keyframes floatingBlobs {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(5%, -5%) scale(1.1);
+  }
+  100% {
+    transform: translate(-5%, 5%) scale(1);
+  }
+} */
+
+/* --------------------------------------------------------------------- */
+
 main {
   flex: 1;
   padding-inline: var(--page-gutter);

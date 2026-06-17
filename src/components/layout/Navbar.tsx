@@ -7,6 +7,7 @@ import IconButton from "../UI/IconButton";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   const navigate = useNavigate(); // temporary for nav scroll
 
@@ -14,9 +15,20 @@ export default function Navbar() {
     setIsMenuOpen(false);
   }, [location.pathname]);
 
+  useEffect(() => {
+    function handleScroll() {
+      setIsScrolled(window.scrollY > 20);
+    }
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <nav className={navStyles.nav}>
-      <div className={navStyles.navContent}>
+      <div className={`${navStyles.navContent} ${isScrolled ? navStyles.navContentScrolled : ""}`}>
         <Link
           to="/"
           className={navStyles.logoLink}
@@ -29,7 +41,6 @@ export default function Navbar() {
         >
           {<img src={Logo} alt="Logo-evbubble" />}
         </Link>
-
         <div className={`${navStyles.rightNav} ${isMenuOpen ? navStyles.rightNavOpen : ""}`}>
           <a href={resumeLink} target="_blank" rel="noopener noreferrer">
             Resume
@@ -67,7 +78,6 @@ export default function Navbar() {
             Contact
           </NavLink>
         </div>
-
         <IconButton
           onClick={() => setIsMenuOpen((currentIsMenuOpen) => !currentIsMenuOpen)}
           classes={`${navStyles.menuButton} ${isMenuOpen ? navStyles.menuButtonOpen : ""}`}

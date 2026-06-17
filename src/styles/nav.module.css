@@ -18,7 +18,7 @@
 }
 
 .logoLink img {
-  width: clamp(60px, 4vw, 65px);
+  width: clamp(65px, 4vw, 65px);
 }
 
 .rightNav {
@@ -32,50 +32,30 @@
   transition: 0.2s ease;
 }
 
+.rightNav a:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
 .menuButton {
   display: none;
 }
 
-.burgerIcon {
-  position: relative;
-  width: 26px;
-  height: 20px;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.burgerIcon span {
-  mix-blend-mode: difference;
-  display: block;
-  height: 2px;
-  width: 100%;
-  background: currentColor;
-  border-radius: 100px;
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease;
-}
-
-.menuButtonOpen .burgerIcon span:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
-}
-.menuButtonOpen .burgerIcon span:nth-child(2) {
-  opacity: 0;
-}
-.menuButtonOpen .burgerIcon span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
 @media (max-width: 600px) {
   .navContent {
-    background: var(--col-surface-secondary);
-    margin: 0.5rem 0.5rem;
+    background: transparent;
+    margin: 0.5rem 1.5rem;
     padding: 0.7rem 0.7rem;
+    transition: background-color 0.25s ease;
+  }
+
+  .navContentScrolled {
+    background: var(--col-surface-primary);
   }
 
   .logoLink img {
-    width: clamp(45px, 4vw, 55px);
+    width: clamp(50px, 4vw, 60px);
   }
   .rightNav {
     display: none;
@@ -92,10 +72,42 @@
     border-radius: 0;
     z-index: 2;
     transform: scale(1);
+    font: var(--font-body-big);
   }
 
   .menuButton {
     display: flex;
     z-index: 3;
+  }
+
+  .burgerIcon {
+    position: relative;
+    width: 26px;
+    height: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .burgerIcon span {
+    mix-blend-mode: difference;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: currentColor;
+    border-radius: 100px;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+
+  .menuButtonOpen .burgerIcon span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .menuButtonOpen .burgerIcon span:nth-child(2) {
+    opacity: 0;
+  }
+  .menuButtonOpen .burgerIcon span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
