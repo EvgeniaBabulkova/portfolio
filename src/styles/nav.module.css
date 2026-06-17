@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 1rem 1.5rem;
+  border-radius: var(--border-radius-full);
 }
 
 .logoLink {
@@ -17,7 +18,7 @@
 }
 
 .logoLink img {
-  width: clamp(54px, 4vw, 65px);
+  width: clamp(60px, 4vw, 65px);
 }
 
 .rightNav {
@@ -69,7 +70,6 @@
 @media (max-width: 600px) {
   .navContent {
     background: var(--col-surface-secondary);
-    border-radius: var(--border-radius-full);
     margin: 0.5rem 0.5rem;
     padding: 0.7rem 0.7rem;
   }

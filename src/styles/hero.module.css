@@ -2,7 +2,7 @@
   display: grid;
   gap: var(--spacing-md);
   grid-template-columns: minmax(0, 0.6fr) minmax(0, 0.4fr);
-  grid-template-rows: 75svh;
+  grid-template-rows: 75lvh;
 }
 
 .heroLeft {

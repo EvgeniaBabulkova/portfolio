@@ -1,5 +1,5 @@
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
-import Logo from "../../assets/evbubble-logo.svg";
+import Logo from "../../assets/evbubble-logo-filled.svg";
 import navStyles from "../../styles/nav.module.css";
 import { resumeLink } from "../../data/site";
 import { useEffect, useState } from "react";
