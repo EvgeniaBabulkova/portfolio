@@ -97,6 +97,7 @@ export default function ProjectsSection() {
             />
           ))}
         </div>
+
         <button
           onClick={() => scrollToProject(activeIndex + 1)}
           disabled={activeIndex === paginationCount - 1}

@@ -46,10 +46,9 @@
 
 .carouselControls {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   gap: var(--spacing-lg);
-  cursor: pointer;
 }
 
 .paginationPill {
@@ -72,4 +71,14 @@
   color: var(--col-text-details);
   font-size: 24px;
   cursor: pointer;
+  width: 36px;
+  height: 36px;
+  background-color: var(--col-surface-primary);
+  border-radius: var(--border-radius-full);
+}
+
+@media (max-width: 600px) {
+  .carouselButtons {
+    visibility: hidden;
+  }
 }

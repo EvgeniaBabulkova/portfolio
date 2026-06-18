@@ -16,6 +16,7 @@ import Axios from "../assets/icons/axios.svg";
 import Atlassian from "../assets/icons/atlassian.svg";
 import Expo from "../assets/icons/expo.svg";
 import Tanstack from "../assets/icons/tanstack.svg";
+import Vuejs from "../assets/icons/vue.svg";
 
 // "lookup" table
 export const techIconMap: Record<string, string> = {
@@ -38,20 +39,20 @@ export const techIconMap: Record<string, string> = {
   "React Native": ReactNative,
   "Node.js": Nodejs,
   "Expo Router": Expo,
+  "Vue.js": Vuejs,
 };
 
 // skills section tech
 export const frontendTech = [
   "React",
   "TypeScript",
-  // "HTML5", // not sure it makes sense to add..
-  // "CSS",
-  "Tailwind CSS",
   "React Native",
   "Expo Router",
+  "Vue.js",
+  "Tailwind CSS",
   "Redux",
-  "Tanstack",
-  "Axios",
+  // "Tanstack",
+  // "Axios",
 ];
 export const uxuiTech = ["Figma", "Atlassian"];
 export const backendTech = ["NestJS", "Node.js", "Jest", "TypeORM"];
