@@ -28,9 +28,9 @@ body::before {
   height: 200%;
   z-index: -1;
   pointer-events: none;
-  opacity: 0.6;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.5' numOctaves='2' stitchTiles='stitch' result='noise'/%3E%3CfeColorMatrix in='noise' type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 350px 350px;
+  opacity: 0.7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.4' numOctaves='0.3' stitchTiles='stitch' result='noise'/%3E%3CfeColorMatrix in='noise' type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 300px 300px;
   background-repeat: repeat;
   animation: grain 1s steps(6) infinite;
 }
@@ -42,10 +42,10 @@ body::after {
   pointer-events: none;
   z-index: -1;
   background:
-    radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.1), transparent 10%),
-    radial-gradient(circle at 75% 25%, rgba(53, 118, 119, 0.1), transparent 30%),
-    radial-gradient(circle at 25% 75%, rgba(34, 67, 75, 0.2), transparent 20%),
-    radial-gradient(circle at 80% 80%, rgba(58, 55, 55, 0.5), transparent 55%);
+    radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.4), transparent 10%),
+    radial-gradient(circle at 75% 25%, rgba(53, 118, 119, 0.3), transparent 30%),
+    radial-gradient(circle at 25% 75%, rgba(34, 67, 75, 0.5), transparent 20%),
+    radial-gradient(circle at 80% 80%, rgba(58, 55, 55, 0.8), transparent 55%);
   filter: blur(20px);
   /* stopping the animation on the moving blobs: */
   /* animation: floatingBlobs 3s ease-in-out infinite alternate;
