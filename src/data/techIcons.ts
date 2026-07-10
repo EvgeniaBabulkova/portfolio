@@ -17,6 +17,8 @@ import Atlassian from "../assets/icons/atlassian.svg";
 import Expo from "../assets/icons/expo.svg";
 import Tanstack from "../assets/icons/tanstack.svg";
 import Vuejs from "../assets/icons/vue.svg";
+import Storybook from "../assets/icons/storybook.svg";
+import Bitbucket from "../assets/icons/bitbucket.svg";
 
 // "lookup" table
 export const techIconMap: Record<string, string> = {
@@ -35,6 +37,8 @@ export const techIconMap: Record<string, string> = {
   Axios: Axios,
   Tanstack: Tanstack,
   Atlassian: Atlassian,
+  Storybook: Storybook,
+  Bitbucket: Bitbucket,
   "Tailwind CSS": Tailwind,
   "React Native": ReactNative,
   "Node.js": Nodejs,

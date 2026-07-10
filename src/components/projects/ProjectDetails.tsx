@@ -21,7 +21,13 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
           <h5>Year</h5>
           <p>{project.year}</p>
         </div>
-        <p className={projectStyles.description}>{project.shortDescription}</p>
+        <div className="flex flex-col gap-(--spacing-md)">
+          {/* todo: contact me - link button */}
+          <p className={projectStyles.description}>{project.shortDescription}</p>
+          {project.slug === "pondoo" && (
+            <h5>Details limited due to professional context - contact me if you have questions</h5>
+          )}
+        </div>
         {(project.livePreview || project.figmaPrototype || project.sourceCode) && (
           <div className={projectStyles.prjButtons}>
             {project.sourceCode && <LinkButton link={project.sourceCode}>Source code</LinkButton>}

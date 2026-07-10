@@ -30,6 +30,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "pondoo",
+    title: "Pondoo",
+    logo: PondooLogo,
+    bkgColor: "#F6EDE2",
+    category: ["Frontend", "UX/UI design"],
+    client: "Pondoo Aps",
+    year: "2025-26",
+    shortDescription:
+      "Pondoo is a home-care planning software used by Danish municipalities. As a Frontend Developer at Qampo, I implemented production features focusing on employee-level configurations that enable granular adjustments for acute operations - reducing reliance on external systems for day-to-day planning. Working in an established codebase, I collaborated closely with backend and UX teams to deliver maintainable features that aligned with Pondoo's existing architecture, the AI optimization pipeline and design system.",
+    tech: ["React", "TypeScript", "Redux", "Axios", "Storybook", "Bitbucket", "Figma"],
+    screenshots: [
+      { file: "pondoo-the-client.png", alt: "What is Pondoo and how they operate" },
+      { file: "pondoo-my-contribution.png", alt: "Base points of contribution" },
+    ],
+  },
+  {
     slug: "wash-world",
     title: "Wash World",
     logo: WashWorldLogo,
@@ -72,23 +88,6 @@ export const projects: Project[] = [
       { file: "daos-wireflow.png", alt: "DAOS Wireflow based on the user flow" },
     ],
     videoId: "hZ1k8a6-tWo",
-  },
-
-  {
-    slug: "pondoo",
-    title: "Pondoo",
-    logo: PondooLogo,
-    bkgColor: "#F6EDE2",
-    category: ["Frontend", "UX/UI design"],
-    client: "Pondoo Aps",
-    year: "2025-26",
-    shortDescription:
-      "Pondoo description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf jbsPondoo description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf jbsPondoo description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf jbsPondoo description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf jbsPondoo description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf jbsPondoo description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf jbs ;fd svofe",
-    tech: ["React", "CSS", "TypeScript"],
-    screenshots: [
-      { file: "WashWorldScreen1", alt: "Wash World app home screen" },
-      { file: "WashWorldScreen2", alt: "Wash World booking flow screen" },
-    ],
   },
   {
     slug: "green-ux",
