@@ -99,7 +99,7 @@ export const projects: Project[] = [
     client: "University project",
     year: "2025",
     shortDescription:
-      "'Breathe for forests' is an educational campaign promoting sustainable consumer choices. The project spanned UX research, information architecture and Figma prototyping, focusing on sustainable, accessible and ethical frontend design through e.g. semantic HTML, ARIA, asset optimization and dark pattern awareness.",
+      "'Breathe for forests' is an educational campaign promoting sustainable consumer choices. The project spanned UX research, information architecture and Figma prototyping, focusing on exploring and implementing practices for sustainable, accessible and ethical frontend design through e.g. semantic HTML, ARIA, asset optimization and dark pattern awareness.",
     tech: ["React", "CSS"],
     screenshots: [
       { file: "greenux-concept-creation.png", alt: "Research, map and prototype for BreatheForForests" },
