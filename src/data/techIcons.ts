@@ -19,6 +19,7 @@ import Tanstack from "../assets/icons/tanstack.svg";
 import Vuejs from "../assets/icons/vue.svg";
 import Storybook from "../assets/icons/storybook.svg";
 import Bitbucket from "../assets/icons/bitbucket.svg";
+import Wordrpess from "../assets/icons/wordpress.svg";
 
 // "lookup" table
 export const techIconMap: Record<string, string> = {
@@ -39,6 +40,7 @@ export const techIconMap: Record<string, string> = {
   Atlassian: Atlassian,
   Storybook: Storybook,
   Bitbucket: Bitbucket,
+  Wordpress: Wordrpess,
   "Tailwind CSS": Tailwind,
   "React Native": ReactNative,
   "Node.js": Nodejs,

@@ -4,6 +4,7 @@ import projectStyles from "../../styles/projects/projectDetails.module.css";
 import type { Project } from "../../data/projects";
 import { techIconMap } from "../../data/techIcons";
 import { useState } from "react";
+import UnderConstruction from "../UnderConstruction";
 
 type ProjectStickySectionProps = {
   project: Project;
@@ -24,20 +25,32 @@ export default function ProjectBody({ project, getProjectImageSrc }: ProjectStic
           </li>
         ))}
       </ul>
-      <div className={projectStyles.screenshots}>
-        {project.videoId && (
-          <iframe
-            src={`https://www.youtube.com/embed/${project.videoId}?rel=0&vq=hd1080${videoStart}`}
-            allowFullScreen
-            className={projectStyles.projectVideo}
-          />
-        )}
-        {project.screenshots.map((photo) => {
-          const src = getProjectImageSrc(project.slug, photo.file);
-          if (!src) return null;
-          return <img key={photo.file} src={src} alt={photo.alt} onClick={() => setEnlargedSrc(src)} />;
-        })}
-      </div>
+      {project.slug !== "wash-world" &&
+      project.slug !== "pondoo" &&
+      project.slug !== "daos" &&
+      project.slug !== "green-ux" ? ( // temporary solution
+        <>
+          <div className="flex justify-center w-full">
+            <UnderConstruction />
+          </div>
+        </>
+      ) : (
+        <div className={projectStyles.screenshots}>
+          {project.videoId && (
+            <iframe
+              src={`https://www.youtube.com/embed/${project.videoId}?rel=0&vq=hd1080${videoStart}`}
+              allowFullScreen
+              className={projectStyles.projectVideo}
+            />
+          )}
+          {project.screenshots.map((photo) => {
+            const src = getProjectImageSrc(project.slug, photo.file);
+            if (!src) return null;
+            return <img key={photo.file} src={src} alt={photo.alt} onClick={() => setEnlargedSrc(src)} />;
+          })}
+        </div>
+      )}
+
       {enlargedSrc && (
         <div className={projectStyles.overlay} onClick={() => setEnlargedSrc(null)}>
           <button className={projectStyles.overlayClose} onClick={() => setEnlargedSrc(null)}>

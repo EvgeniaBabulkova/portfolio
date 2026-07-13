@@ -4,6 +4,7 @@ import DaosLogo from "../assets/prj-daos/DAOS-logo.svg";
 import PondooLogo from "../assets/prj-pondoo/Pondoo-logo.svg";
 import GreenUXLogo from "../assets/prj-green-ux/greenUX-logo.svg";
 import TCCLogo from "../assets/prj-tcc/TCC-logo.svg";
+import GymBubbleLogo from "../assets/prj-gym-bubble/gymbubble-logo.svg";
 
 type ProjectScreenshot = {
   file: string;
@@ -91,6 +92,22 @@ export const projects: Project[] = [
     videoId: "hZ1k8a6-tWo",
   },
   {
+    slug: "gym-bubble",
+    title: "Gym Bubble",
+    logo: GymBubbleLogo,
+    bkgColor: "#4F46A3",
+    category: ["Frontend", "UX/UI design"],
+    client: "Personal project",
+    year: "2026",
+    shortDescription:
+      "Gym bubble is a personal project for creating and tracking my fitness workouts. It focuses on modern Vue development using the Composition API, reusable components, routing, reactive state management and responsive frontend development while following iterative, feature-driven development process. Currently migrating it to Nuxt.",
+    tech: ["Vue.js", "TypeScript", "Figma"],
+    screenshots: [
+      { file: "WashWorldScreen1", alt: "Wash World app home screen" },
+      { file: "WashWorldScreen2", alt: "Wash World booking flow screen" },
+    ],
+  },
+  {
     slug: "green-ux",
     title: "Breathe for forests",
     logo: GreenUXLogo,
@@ -100,7 +117,7 @@ export const projects: Project[] = [
     year: "2025",
     shortDescription:
       "'Breathe for forests' is an educational campaign promoting sustainable consumer choices. The project spanned UX research, information architecture and Figma prototyping, focusing on exploring and implementing practices for sustainable, accessible and ethical frontend design through e.g. semantic HTML, ARIA, asset optimization and dark pattern awareness.",
-    tech: ["React", "CSS"],
+    tech: ["React", "CSS", "Figma"],
     screenshots: [
       { file: "greenux-concept-creation.png", alt: "Research, map and prototype for BreatheForForests" },
       { file: "greenux-sustainable-design.png", alt: "Sustainable design concepts for BreatheForForests" },
@@ -120,8 +137,8 @@ export const projects: Project[] = [
     client: "The Clothing Club Aarhus",
     year: "2024",
     shortDescription:
-      "TCC description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf  description TCC description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf  descriptionhbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf,p;eglsjkv fsdgifsb ug addkfbf jbs ;fd svofe",
-    tech: ["React", "CSS", "TypeScript"],
+      "Designed and developed a responsive website for a non-profit clothing library, combining UX research, branding, prototyping and Wordpress implementation. The project followed a user-centred design process, from interviews and information architecture to usability testing, before being implemented in WordPress with custom HTML, CSS, JavaScript and SEO optimizations.",
+    tech: ["Figma", "Wordpress", "CSS"],
     screenshots: [
       { file: "WashWorldScreen1", alt: "Wash World app home screen" },
       { file: "WashWorldScreen2", alt: "Wash World booking flow screen" },

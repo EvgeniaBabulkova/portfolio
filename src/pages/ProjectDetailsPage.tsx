@@ -30,17 +30,9 @@ export default function ProjectDetailsPage() {
       <div className={projectStyles.topBanner} style={{ backgroundColor: project.bkgColor }}>
         <img src={project.logo} alt="project-logo" />
       </div>
-      {project.slug === "tcc" ? ( // temporary solution
-        <>
-          <UnderConstruction />
-        </>
-      ) : (
-        <>
-          <ProjectDetails project={project} />
-          <ProjectBody project={project} getProjectImageSrc={getProjectImageSrc} />
-          <ContactBanner />
-        </>
-      )}
+      <ProjectDetails project={project} />
+      <ProjectBody project={project} getProjectImageSrc={getProjectImageSrc} />
+      <ContactBanner />
     </>
   );
 }
