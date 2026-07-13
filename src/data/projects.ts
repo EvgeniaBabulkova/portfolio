@@ -99,13 +99,17 @@ export const projects: Project[] = [
     client: "University project",
     year: "2025",
     shortDescription:
-      "GreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf GreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbfGreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbfGreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbfGreenUX description hbgfsdlk,p;eglsjkv fsdgifsb ug addkfbf,p;eglsjkv fsdgifsb ug addkfbf jbs ;fd svofe",
-    tech: ["React", "CSS", "TypeScript"],
+      "'Breathe for forests' is an educational campaign promoting sustainable consumer choices. The project spanned UX research, information architecture and Figma prototyping, focusing on sustainable, accessible and ethical frontend design through e.g. semantic HTML, ARIA, asset optimization and dark pattern awareness.",
+    tech: ["React", "CSS"],
     screenshots: [
-      { file: "WashWorldScreen1", alt: "Wash World app home screen" },
-      { file: "WashWorldScreen2", alt: "Wash World booking flow screen" },
+      { file: "greenux-lofi.png", alt: "Low fidelity prototype of BreatheForForests" },
+      { file: "greenux-responsiveness.png", alt: "Responsive design for BreatheForForests" },
+      { file: "greenux-human-persona.png", alt: "User persona for BreatheForForests" },
     ],
+    livePreview: "https://green-ux.vercel.app/",
   },
+
+  // for lateeeerrrrrrrrrr:
   {
     slug: "tcc",
     title: "The Clothing Club",

@@ -30,7 +30,7 @@ export default function ProjectDetailsPage() {
       <div className={projectStyles.topBanner} style={{ backgroundColor: project.bkgColor }}>
         <img src={project.logo} alt="project-logo" />
       </div>
-      {project.slug !== "wash-world" && project.slug !== "daos" && project.slug !== "pondoo" ? ( // temporary solution 🥲
+      {project.slug === "tcc" ? ( // temporary solution
         <>
           <UnderConstruction />
         </>
