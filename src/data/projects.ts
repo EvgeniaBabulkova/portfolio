@@ -102,9 +102,10 @@ export const projects: Project[] = [
       "'Breathe for forests' is an educational campaign promoting sustainable consumer choices. The project spanned UX research, information architecture and Figma prototyping, focusing on sustainable, accessible and ethical frontend design through e.g. semantic HTML, ARIA, asset optimization and dark pattern awareness.",
     tech: ["React", "CSS"],
     screenshots: [
-      { file: "greenux-lofi.png", alt: "Low fidelity prototype of BreatheForForests" },
-      { file: "greenux-responsiveness.png", alt: "Responsive design for BreatheForForests" },
-      { file: "greenux-human-persona.png", alt: "User persona for BreatheForForests" },
+      { file: "greenux-concept-creation.png", alt: "Research, map and prototype for BreatheForForests" },
+      { file: "greenux-sustainable-design.png", alt: "Sustainable design concepts for BreatheForForests" },
+      { file: "greenux-accessible-design.png", alt: "Accessible desing concepts for BreatheForForests" },
+      { file: "greenux-dark-patterns.png", alt: "Exploring dark patterns for awareness in BreatheForForests" },
     ],
     livePreview: "https://green-ux.vercel.app/",
   },
