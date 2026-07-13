@@ -5,7 +5,6 @@ import projectStyles from "../styles/projects/projectDetails.module.css";
 import ContactBanner from "../components/ContactBanner";
 import ProjectDetails from "../components/projects/ProjectDetails";
 import ProjectBody from "../components/projects/ProjectBody";
-import UnderConstruction from "../components/UnderConstruction";
 
 export default function ProjectDetailsPage() {
   const params = useParams();
