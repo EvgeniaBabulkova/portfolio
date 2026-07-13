@@ -1,21 +1,22 @@
-import { useState } from "react";
+import type { ReactNode } from "react";
 
 type TagProps = {
-  children: React.ReactNode;
+  children: ReactNode;
+  selected: boolean;
   onSelect: () => void;
 };
 
-export default function Tag({ children, onSelect }: TagProps) {
-  const [isSelected, setIsSelected] = useState(false);
+export default function Tag({ children, selected, onSelect }: TagProps) {
   return (
     <button
+      type="button"
       className={`
-        px-5 py-3 rounded-(--border-radius) [font:var(--font-chip)]
-        ${isSelected ? "bg-(--col-surface-invert) text-(--col-text-invert)" : "bg-(--col-surface-tertiary)"}
+        px-5 py-3 rounded-(--border-radius) [font:var(--font-chip)] transition-colors duration-300 ease-out cursor-pointer
+        ${selected ? "bg-(--col-surface-invert) text-(--col-text-invert)" : "bg-(--col-surface-tertiary)"}
         `}
+      aria-pressed={selected}
       onClick={() => {
         onSelect();
-        setIsSelected((prev) => !prev);
       }}
     >
       {children}

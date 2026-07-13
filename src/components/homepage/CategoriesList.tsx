@@ -1,8 +1,27 @@
-// import { categories, type Category } from "../data/categories";
-// import Tag from "./UI/Tag";
+import { categories, type Category } from "../../data/categories";
+import Tag from "../UI/Tag";
 
-// export default function CategoriesList() {
-//   return {categories.map((category): Category => (
-//     <Tag onSelect={() => {}}>{category}</Tag> // to finish correctlyyyyyyyyyyyyyyyyyyyyyyyy
-//   ))};
-// }
+type FilterCategory = "All" | Category;
+
+type CategoriesListProps = {
+  activeCategory: FilterCategory;
+  onCategoryChange: (category: FilterCategory) => void;
+};
+
+export default function CategoriesList({ activeCategory, onCategoryChange }: CategoriesListProps) {
+  const filterCategories: FilterCategory[] = ["All", ...categories];
+
+  return (
+    <div className="flex flex-wrap justify-end gap-(--spacing-xs)">
+      {filterCategories.map((category) => {
+        const selected = activeCategory === category;
+
+        return (
+          <Tag key={category} selected={selected} onSelect={() => onCategoryChange(category)}>
+            {category}
+          </Tag>
+        );
+      })}
+    </div>
+  );
+}
