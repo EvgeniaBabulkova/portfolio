@@ -38,10 +38,11 @@ export const projects: Project[] = [
     client: "Pondoo Aps",
     year: "2025-26",
     shortDescription:
-      "Pondoo is a home-care planning software used by Danish municipalities. As a Frontend Developer at Qampo, I implemented production features focusing on employee-level configurations that enable granular adjustments for acute operations - reducing reliance on external systems for day-to-day planning. Working in an established codebase, I collaborated closely with backend and UX teams to deliver maintainable features that aligned with Pondoo's existing architecture, the AI optimization pipeline and design system.",
+      "Pondoo is a home-care planning software used by Danish municipalities. As a Frontend Developer at Qampo, I implemented production features focusing on employee-level configurations that enable adjustments for acute operations - reducing reliance on external systems for day-to-day planning. Working in an established codebase, I collaborated closely with backend and UX teams to deliver maintainable features that aligned with Pondoo's existing architecture, the AI optimization pipeline and design system.",
     tech: ["React", "TypeScript", "Redux", "Axios", "Storybook", "Bitbucket", "Figma"],
     screenshots: [
       { file: "pondoo-the-client.png", alt: "What is Pondoo and how they operate" },
+      { file: "pondoo-challenge-solution.png", alt: "The main problems I worked with on Pondoo" },
       { file: "pondoo-my-contribution.png", alt: "Base points of contribution" },
     ],
   },
