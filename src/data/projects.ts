@@ -101,7 +101,7 @@ export const projects: Project[] = [
     year: "2026",
     shortDescription:
       "Gym bubble is a personal project for creating and tracking my fitness workouts. It focuses on modern Vue development using the Composition API, reusable components, routing, reactive state management and responsive frontend development while following iterative, feature-driven development process. Currently exploring migrating it to Nuxt.",
-    tech: ["Vue.js", "TypeScript", "Figma"],
+    tech: ["Vue.js", "TypeScript", "Pinia", "Figma"],
     screenshots: [
       { file: "WashWorldScreen1", alt: "Wash World app home screen" },
       { file: "WashWorldScreen2", alt: "Wash World booking flow screen" },
