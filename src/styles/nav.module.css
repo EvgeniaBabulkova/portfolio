@@ -1,7 +1,7 @@
 .nav {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 10;
   width: 100%;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .logoLink {
-  z-index: 3;
+  z-index: 10;
 }
 
 .logoLink img {
@@ -70,14 +70,14 @@
     align-items: center;
     gap: var(--spacing-lg);
     border-radius: 0;
-    z-index: 2;
+    z-index: 9;
     transform: scale(1);
     font: var(--font-body-big);
   }
 
   .menuButton {
     display: flex;
-    z-index: 3;
+    z-index: 9;
   }
 
   .burgerIcon {
