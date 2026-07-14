@@ -1,0 +1,16 @@
+.techChip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--border-radius-small);
+  background-color: var(--col-surface-primary);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.techChipIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}

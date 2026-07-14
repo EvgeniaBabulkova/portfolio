@@ -88,7 +88,13 @@ export default function ProjectsSection() {
           {filteredProjects.map((project, index) => {
             return (
               <li key={project.slug} ref={index === 0 ? firstCardRef : null}>
-                <ProjectCard bkgColor={project.bkgColor} logo={project.logo} slug={project.slug} />
+                <ProjectCard
+                  bkgColor={project.bkgColor}
+                  logo={project.logo}
+                  slug={project.slug}
+                  title={project.title}
+                  tech={project.tech}
+                />
               </li>
             );
           })}

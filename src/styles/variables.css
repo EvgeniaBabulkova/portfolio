@@ -29,6 +29,7 @@
 
   /* border */
   --border-radius: 28px;
+  --border-radius-small: 16px;
   --border-radius-full: 100px;
 
   /* special spacing */
