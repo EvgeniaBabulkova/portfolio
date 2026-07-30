@@ -1,0 +1,136 @@
+.aboutContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-xl);
+  background:
+    linear-gradient(180deg, rgba(53, 118, 119, 0.2) 0%, rgba(18, 18, 18, 0.78) 15%, rgba(18, 18, 18, 0.98) 100%),
+    var(--col-surface-primary);
+}
+
+.sectionCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* -------------------------------------------------------- */
+
+.profilePanel {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--spacing-lg);
+  align-items: center;
+}
+
+.profilePanel img {
+  width: 160px;
+  height: 160px;
+  border-radius: var(--border-radius-full);
+}
+
+.profileName {
+  font: var(--font-h1);
+  text-transform: none;
+  text-shadow: none;
+}
+
+/* ------------------------------------------------------------ */
+
+.historyRow {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-small);
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.historyImg {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--border-radius-small);
+  overflow: hidden;
+  background: var(--col-graph-2);
+  color: var(--col-text-primary);
+  font: var(--font-button);
+}
+
+.historyPeriod,
+.historyPlace,
+.historyTime {
+  color: var(--col-text-details);
+}
+
+/* ------------------------------------------------- */
+
+.hobbyCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-small);
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.hobbySubtitle {
+  color: var(--col-text-details);
+}
+
+.hobbyCard:hover,
+.historyRow:hover {
+  background-color: var(--col-surface-secondary);
+  transform: translateY(-2px);
+}
+
+.historyRow:hover .historyPeriod,
+.historyRow:hover .historyPlace,
+.historyRow:hover .historyTime,
+.hobbyCard:hover .hobbySubtitle {
+  color: var(--col-text-primary);
+}
+
+.hobbyImg {
+  width: 100%;
+  aspect-ratio: 1;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--border-radius-small);
+}
+
+/* ---------------------------------------------- */
+
+@media (max-width: 900px) {
+  .profilePanel {
+    grid-template-columns: 1fr;
+  }
+
+  .profilePanel img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutContainer {
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-small);
+  }
+
+  .profilePanel img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profileName {
+    font: var(--font-h1-mobile);
+  }
+}
