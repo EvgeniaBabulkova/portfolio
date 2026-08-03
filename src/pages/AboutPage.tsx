@@ -7,25 +7,29 @@ import aboutStyles from "../styles/about.module.css";
 
 export default function AboutPage() {
   return (
-    <section className={aboutStyles.aboutContainer}>
-      <div className={aboutStyles.profilePanel}>
-        <img src={Eva} alt="Evgenia Babulkova" />
-        <div className="flex flex-col gap-(--spacing-md)">
-          <p>Profile</p>
-          <h1 className={aboutStyles.profileName}>Evgenia Babulkova</h1>
-          <div className="flex flex-wrap items-center gap-2">
-            <p>Eva &nbsp; · &nbsp; Frontend developer</p>
-            <Tag selected small onSelect={() => {}}>
-              Open to work
-            </Tag>
-            <p>Aarhus, Denmark</p>
+    <section className={aboutStyles.aboutSection}>
+      <div className={aboutStyles.aboutContainer}>
+        <div className={aboutStyles.profilePanel}>
+          <img src={Eva} alt="Evgenia Babulkova" />
+          <div className="flex flex-col gap-(--spacing-md)">
+            <p className="text-(--col-text-primary)!">Profile</p>
+            <h1 className={aboutStyles.profileName}>Evgenia Babulkova</h1>
+            <div className="flex flex-wrap items-center gap-2">
+              <p>Eva &nbsp; · &nbsp; Frontend developer</p>
+              <Tag selected small onSelect={() => {}}>
+                Open to work
+              </Tag>
+              <p>Aarhus, Denmark</p>
+            </div>
           </div>
         </div>
+        <ExperienceHistorySection />
       </div>
 
-      <ExperienceHistorySection />
-      <NowPlayingSection />
-      <HobbiesSection />
+      <div className={`${aboutStyles.aboutContainer} ${aboutStyles.aboutSidebar}`}>
+        <NowPlayingSection />
+        <HobbiesSection />
+      </div>
     </section>
   );
 }

@@ -3,7 +3,7 @@ import aboutStyles from "../../styles/about.module.css";
 
 export default function ExperienceHistorySection() {
   return (
-    <section className={aboutStyles.sectionCard}>
+    <section className={`${aboutStyles.sectionCard} p-(--spacing-md)`}>
       <h5>History</h5>
 
       <div className="flex flex-col">

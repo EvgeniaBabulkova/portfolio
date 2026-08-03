@@ -5,6 +5,7 @@
   --col-text-tertiary: #f2542d;
   --col-text-invert: #242424;
   --col-text-details: #88877e;
+  --col-text-details-lighter: #bdbcb0; /* for the "spotify-like" profile */
 
   --col-surface-primary: #121212;
   --col-surface-secondary: #2a2929;
@@ -69,7 +70,7 @@
 
   --font-button: 700 16px "Outfit";
   --font-label: 500 24px "Outfit"; /* section headings subtitle */
-  --font-chip: 500 14px "Outfit"; /* tag */
+  --font-chip: 600 14px "Outfit"; /* tag */
 
   --font-h1-mobile: 900 28px/1 "GillSansNova";
   --font-label-mobile: 500 20px "Outfit";

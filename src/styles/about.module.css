@@ -1,34 +1,51 @@
+.aboutSection {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
 .aboutContainer {
   width: 100%;
   display: flex;
+  flex: 1;
   flex-direction: column;
-  gap: var(--spacing-xl);
-  border-radius: var(--border-radius);
-  padding: var(--spacing-xl);
-  background:
-    linear-gradient(180deg, rgba(53, 118, 119, 0.2) 0%, rgba(18, 18, 18, 0.78) 15%, rgba(18, 18, 18, 0.98) 100%),
-    var(--col-surface-primary);
+  border-radius: var(--border-radius-small);
+  overflow: hidden;
+  background: var(--col-surface-primary);
+}
+
+.aboutSidebar {
+  flex: 0 1 30%;
+  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+  gap: var(--spacing-md);
 }
 
 .sectionCard {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: var(--spacing-sm);
 }
 
 /* -------------------------------------------------------- */
 
 .profilePanel {
+  padding: var(--spacing-xxl) var(--spacing-md) var(--spacing-md);
   display: grid;
   grid-template-columns: auto 1fr;
   gap: var(--spacing-lg);
   align-items: center;
+  background:
+    linear-gradient(180deg, rgba(53, 118, 119, 0.53) 0%, rgba(53, 110, 101, 0.2) 75%, rgba(18, 18, 18, 0.98) 120%),
+    var(--col-surface-primary);
 }
 
 .profilePanel img {
   width: 160px;
   height: 160px;
   border-radius: var(--border-radius-full);
+}
+
+.profilePanel p {
+  color: var(--col-text-details-lighter);
 }
 
 .profileName {
@@ -70,11 +87,69 @@
 
 /* ------------------------------------------------- */
 
+.songCard {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-small);
+  background: var(--col-surface-secondary);
+  cursor: pointer;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.songIcon {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--border-radius-small);
+  background: var(--col-surface-tertiary);
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.songTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--col-text-primary);
+  font: var(--font-chip);
+  white-space: nowrap;
+}
+
+.songArtist {
+  overflow: hidden;
+  color: var(--col-text-details);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.songLink {
+  display: flex;
+  gap: var(--spacing-xs);
+  color: var(--col-text-details-lighter);
+  font: var(--font-chip);
+}
+
+/* ------------------------------------------------- */
+
 .hobbyCard {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm);
   border-radius: var(--border-radius-small);
   transition:
     background-color 180ms ease,
@@ -86,7 +161,8 @@
 }
 
 .hobbyCard:hover,
-.historyRow:hover {
+.historyRow:hover,
+.songCard:hover {
   background-color: var(--col-surface-secondary);
   transform: translateY(-2px);
 }
@@ -106,6 +182,12 @@
   border-radius: var(--border-radius-small);
 }
 
+.historyImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ---------------------------------------------- */
 
 @media (max-width: 900px) {
@@ -117,12 +199,24 @@
     width: 130px;
     height: 130px;
   }
+
+  .songCard {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .songLink {
+    display: none;
+  }
+
+  .songIcon {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 @media (max-width: 600px) {
-  .aboutContainer {
-    padding: var(--spacing-md);
-    border-radius: var(--border-radius-small);
+  .aboutSection {
+    flex-direction: column;
   }
 
   .profilePanel img {
