@@ -42,7 +42,7 @@ export const experienceHistory: ExperienceHistoryItem[] = [
   },
   {
     name: "AP degree, Multimedia Design",
-    period: "2019 - 2021",
+    period: "2022 - 2024",
     place: "Business Academy Aarhus",
     totalTime: "2 yrs",
     image: BAALogo,
