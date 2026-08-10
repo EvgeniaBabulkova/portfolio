@@ -95,7 +95,7 @@ export const projects: Project[] = [
     slug: "gym-bubble",
     title: "Gym Bubble",
     logo: GymBubbleLogo,
-    bkgColor: "#4F46A3",
+    bkgColor: "#100f1a",
     category: ["Frontend", "UX/UI design"],
     client: "Personal project",
     year: "2026",
