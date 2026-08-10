@@ -17,7 +17,7 @@ export default function LinkButton({ link, children, variant = "primary" }: Link
         className={`${buttonStyles.button} ${variant === "primary" && buttonStyles.buttonPrimary}`}
       >
         {children}
-        <span className="w-(--spacing-lg) h-(--spacing-lg)">
+        <span className={buttonStyles.linkButtonIcon}>
           <img src={LinkIcon} />
         </span>
       </a>

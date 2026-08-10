@@ -36,18 +36,21 @@
   cursor: pointer;
 }
 
-/* for the categories it may make sense to add flex-wrap: wrap - when resizing the page for the tags to wrap */
-/* 
-@media (max-width: 600px) {    // todoooooooo
+.linkButtonIcon {
+  width: var(--spacing-lg);
+  height: var(--spacing-lg);
+}
+
+@media (max-width: 600px) {
   .button {
-    padding: var(--spacing-md) var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
     min-height: 44px;
-    font: var(--font-body-3);
+    font: var(--font-button-mobile);
+    gap: var(--spacing-xs);
   }
 
-  .buttonPrimary {
-    width: 100%;
-    justify-content: center;
-    padding: var(--spacing-lg) var(--spacing-xl);
+  .linkButtonIcon {
+    width: var(--spacing-md);
+    height: var(--spacing-md);
   }
-} */
+}
