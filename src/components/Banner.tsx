@@ -1,4 +1,5 @@
 import Title from "./UI/Title";
+import bannerStyles from "../styles/banner.module.css";
 
 type BannerProps = {
   subtitle: string;
@@ -8,17 +9,7 @@ type BannerProps = {
 
 export default function Banner({ subtitle, title, children }: BannerProps) {
   return (
-    <div
-      className="
-        flex 
-        flex-col 
-        gap-(--spacing-xl) 
-        px-(--spacing-xxl) 
-        py-(--spacing-3xl) 
-        bg-(--col-surface-primary) 
-        rounded-(--border-radius) 
-        items-start"
-    >
+    <div className={bannerStyles.banner}>
       <Title subtitle={subtitle} title={title} />
       {children}
     </div>
