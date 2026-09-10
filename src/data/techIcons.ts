@@ -21,6 +21,8 @@ import Storybook from "../assets/icons/storybook.svg";
 import Bitbucket from "../assets/icons/bitbucket.svg";
 import Wordrpess from "../assets/icons/wordpress.svg";
 import Pinia from "../assets/icons/pinia.svg";
+import Nuxt from "../assets/icons/nuxt.svg";
+import SCSS from "../assets/icons/scss.svg";
 
 // "lookup" table
 export const techIconMap: Record<string, string> = {
@@ -43,6 +45,8 @@ export const techIconMap: Record<string, string> = {
   Bitbucket: Bitbucket,
   Wordpress: Wordrpess,
   Pinia: Pinia,
+  Nuxt: Nuxt,
+  SCSS: SCSS,
   "Tailwind CSS": Tailwind,
   "React Native": ReactNative,
   "Node.js": Nodejs,

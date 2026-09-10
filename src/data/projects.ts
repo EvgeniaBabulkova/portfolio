@@ -5,6 +5,7 @@ import PondooLogo from "../assets/prj-pondoo/Pondoo-logo.svg";
 import GreenUXLogo from "../assets/prj-green-ux/greenUX-logo.svg";
 import TCCLogo from "../assets/prj-tcc/TCC-logo.svg";
 import GymBubbleLogo from "../assets/prj-gym-bubble/gymbubble-logo.svg";
+import StorefrontLogo from "../assets/prj-storefront/Storefront-logo.svg";
 
 type ProjectScreenshot = {
   file: string;
@@ -105,6 +106,25 @@ export const projects: Project[] = [
     screenshots: [
       { file: "WashWorldScreen1", alt: "Wash World app home screen" },
       { file: "WashWorldScreen2", alt: "Wash World booking flow screen" },
+    ],
+  },
+  {
+    slug: "storefront",
+    title: "E-commerce Storefront",
+    logo: StorefrontLogo,
+    bkgColor: "#ffff",
+    category: ["Frontend"],
+    client: "-",
+    year: "2026",
+    shortDescription:
+      "An e-commerce storefront built as a technical assignment using Vue 3, Nuxt and TypeScript. Working from a provided product dataset, I implemented category navigation, URL-based filtering and sorting, promotional placements and variant-aware product pages, while making decisions around ambiguous data, SSR and component structure.",
+    sourceCode: "https://github.com/EvgeniaBabulkova/brandtech-ecommerce-app",
+    livePreview: "https://brandtech-ecommerce-app.vercel.app/",
+
+    tech: ["Vue.js", "Nuxt", "TypeScript", "SCSS"],
+    screenshots: [
+      { file: "storefront-plp.png", alt: "E-commerce storefront - Prouct listings page" },
+      { file: "storefront-pdp.png", alt: "E-commerce storefront - Prouct details page" },
     ],
   },
   {

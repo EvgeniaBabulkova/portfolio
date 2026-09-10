@@ -53,7 +53,9 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
-  width: 180px;
+  width: max-content;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 /* -------------------------------- */
@@ -166,6 +168,7 @@
 
   .prjButtons {
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
   }
 

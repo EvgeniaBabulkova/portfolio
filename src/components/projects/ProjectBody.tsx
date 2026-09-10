@@ -25,16 +25,7 @@ export default function ProjectBody({ project, getProjectImageSrc }: ProjectStic
           </li>
         ))}
       </ul>
-      {project.slug !== "wash-world" &&
-      project.slug !== "pondoo" &&
-      project.slug !== "daos" &&
-      project.slug !== "green-ux" ? ( // temporary solution
-        <>
-          <div className="flex justify-center w-full">
-            <UnderConstruction />
-          </div>
-        </>
-      ) : (
+      {project.slug !== "tcc" && project.slug !== "gym-bubble" ? ( // temporary solution
         <div className={projectStyles.screenshots}>
           {project.videoId && (
             <iframe
@@ -49,6 +40,12 @@ export default function ProjectBody({ project, getProjectImageSrc }: ProjectStic
             return <img key={photo.file} src={src} alt={photo.alt} onClick={() => setEnlargedSrc(src)} />;
           })}
         </div>
+      ) : (
+        <>
+          <div className="flex justify-center w-full">
+            <UnderConstruction />
+          </div>
+        </>
       )}
 
       {enlargedSrc && (
