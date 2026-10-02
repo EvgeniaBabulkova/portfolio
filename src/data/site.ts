@@ -10,6 +10,7 @@ export const footerLinks: Link[] = [
   { text: "LinkedIn", link: "https://www.linkedin.com/in/evgenia-babulkova/" },
   { text: "Instagram", link: "https://www.instagram.com/ev_shots" },
   { text: "Resume", link: resumeLink },
+  { text: "GitHub", link: "https://github.com/EvgeniaBabulkova" },
 ];
 
 export const copyright: string = "© 2026 Evbubble";
